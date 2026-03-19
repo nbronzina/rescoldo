@@ -1,97 +1,132 @@
-# Skill: rescoldo-web
+# Rescoldo Web — Sistema visual y arquitectura
 
-Tokens CSS, arquitectura web, mecanismos diegéticos y referentes de diseño.
+name: rescoldo-web
+description: Sistema visual, arquitectura y decisiones editoriales específicas para la web de Rescoldo. Activar siempre que se construya, evalúe o itere cualquier componente de la web — un botón, un texto, una sección, una decisión de navegación, un color. Si hay duda entre este skill y diegetic-fiction-web, usar ambos juntos. Este skill es la traducción del libro a web; diegetic-fiction-web es la lógica que lo sostiene.
 
-## Tokens CSS — canónicos, no modificar
+## Qué es la web de Rescoldo
+
+Un artefacto diegético que existe en otoño de 2030. No es la web del restaurante — es el journal de la primera temporada en formato web. Existe en el mismo universo que el PDF y el Mercado San Telmo 2030 (futures-in-maps.com/san-telmo).
+
+No tiene función transaccional. No tiene reservas. Tiene una lista de espera que puede no llevar a ningún lado.
+
+Audiencia: gastronomía de autor + diseño de futuros + design fiction.
+
+## El gap que ocupa
+
+No existe ningún restaurante argentino con una web editorial de este nivel. Rescoldo puede ser el primero en Buenos Aires en construir una web que funcione como objeto editorial con narrativa territorial, fotografía documental y coherencia entre impreso y digital.
+
+No necesita competir con Attica ni Hiša Franko. Necesita ser el primero en hacer esto en el sur de la ciudad.
+
+## Sistema visual
+
+### Tokens CSS base
 
 ```css
 :root {
-  --color-bg:        #FEFCF9;
-  --color-text:      #2D2D2D;
-  --color-secondary: #666666;
-  --color-muted:     #888888;
-  --color-accent:    #8B3A1A;
-  --color-surface:   #F0ECE6;
+  /* Colores */
+  --color-bg:        #FEFCF9;  /* crema cálido — fondo del libro */
+  --color-text:      #2D2D2D;  /* charcoal — texto principal */
+  --color-secondary: #666666;  /* gris medio — metadata, subtítulos */
+  --color-muted:     #888888;  /* gris claro — folios, running headers */
+  --color-accent:    #8B3A1A;  /* terracota/brasa — detalles puntuales */
+  --color-surface:   #F0ECE6;  /* crema más oscuro — fondos de sección */
 
-  --font-serif: 'Cormorant Garamond', Georgia, serif;
-  --font-sans:  'DM Sans', system-ui, sans-serif;
-  --font-mono:  'DM Mono', monospace;
+  /* Tipografía */
+  --font-serif:      'Freight Text Pro', 'Cormorant Garamond', Georgia, serif;
+  --font-sans:       'DM Sans', 'Neue Haas Grotesk', system-ui, sans-serif;
+  --font-mono:       'DM Mono', monospace;  /* para datos técnicos, fechas */
 
-  --text-xs:    0.75rem;
-  --text-sm:    0.875rem;
-  --text-base:  1rem;
-  --text-lg:    1.125rem;
-  --text-xl:    1.5rem;
-  --text-2xl:   2.5rem;
-  --text-hero:  clamp(3rem, 8vw, 7rem);
+  /* Escala tipográfica */
+  --text-xs:    0.75rem;   /* 12px — metadata, legal */
+  --text-sm:    0.875rem;  /* 14px — subtítulos, pies de foto */
+  --text-base:  1rem;      /* 16px — cuerpo */
+  --text-lg:    1.125rem;  /* 18px — cuerpo largo, entradas journal */
+  --text-xl:    1.5rem;    /* 24px — títulos sección */
+  --text-2xl:   2.5rem;    /* 40px — títulos grandes */
+  --text-hero:  clamp(3rem, 8vw, 7rem);  /* título portada */
 
-  --leading-body:  1.6;
-  --measure:       65ch;
-  --column-text:   680px;
-  --max-width:     1200px;
-  --margin-page:   clamp(1.5rem, 5vw, 5rem);
+  /* Espaciado */
+  --leading-tight:   1.2;
+  --leading-body:    1.6;
+  --leading-loose:   1.8;
+  --measure:         65ch;   /* ancho máximo de línea para lectura */
+
+  /* Layout */
+  --max-width:       1200px;
+  --column-text:     680px;   /* ancho columna texto corrido */
+  --margin-page:     clamp(1.5rem, 5vw, 5rem);
 }
 ```
 
-## Stack
+### Tipografía
 
-```
-Next.js 14+ (App Router)
-Tailwind CSS
-Framer Motion (máximo DOS animaciones: scroll fade-in + parallax hero)
-Vercel
-Google Fonts: Cormorant Garamond + DM Sans + DM Mono
-```
+Serif editorial (Freight Text Pro o Cormorant Garamond) → cuerpos largos, entradas del journal, texto narrativo de territorios y platos.
 
-## Tipografía
+Sans geométrica (DM Sans) → navigation, metadata, fechas, nombres de territorios, subtítulos, datos. Ya establecida en el libro.
 
-- **Cormorant Garamond** → cuerpos largos, entradas journal, texto narrativo
-- **DM Sans** → navigation, metadata, fechas, subtítulos
-- **DM Mono** → datos técnicos diegéticos: temperatura, coordenadas, precios en pesos 2030
-- `font-display: swap` en todos
+Mono (DM Mono) → datos técnicos diegéticos: temperatura del horno, tiempo de fermentación, coordenadas, precios del menú.
+
+**Regla:** la serif lleva el tiempo, la historia, la voz de Julián. La sans lleva la información. La mono lleva los datos que hacen que el mundo ficticio parezca real.
+
+### Fotografía
+
+Sistema de Brae/Studio Round adaptado: still life documental, never food styling. Las reglas del skill de fotoperiodismo aplican igual en web que en impreso.
+
+En web se agrega: la foto mal encuadrada o levemente borrosa es un recurso diegético. Parece una foto que alguien tomó con el teléfono en el patio. Eso es correcto.
 
 ## Arquitectura de la web
 
-### Navegación
+### Estructura de navegación (3 secciones máximo)
 
 ```
-RESCOLDO                    La temporada · El territorio · El equipo
-[logo/wordmark izquierda]   [3 links derecha]
+RESCOLDO
+├── La temporada      ← el journal
+├── El territorio     ← los cinco territorios y productores
+└── El equipo         ← Victoria, Nicolás, Mara, Tomás, Julián
 ```
 
-Nav fija, mínima. Desaparece al scroll hacia abajo, reaparece al scroll hacia arriba. Mobile: hamburger mínimo. Máximo 3 links.
+Navigation: mínima fija. Logo izquierda + 3 links derecha. Desaparece al hacer scroll hacia abajo, reaparece al hacer scroll hacia arriba.
 
-### Rutas
+### Homepage — scroll narrativo largo
+
+El modelo es Hiša Franko + Noma Weather Report: un único recorrido vertical sin interrupciones.
+
+Secuencia:
+
+1. **Hero** — imagen full-bleed del patio (p.39 del libro). Sin texto excepto:
+```
+RESCOLDO
+Barracas, Buenos Aires
+Otoño 2030
+```
+El lector scrollea o no.
+
+2. **La declaración** — equivalente al texto intro de p.38 del libro. No el manifiesto del chef — la entrada del diario. Primera persona, frases cortas. 3-4 párrafos.
+
+3. **El territorio** — los cinco territorios como módulos. Foto + nombre del lugar + nombre del proveedor + una línea. El lector puede expandir o seguir scrolleando.
+
+4. **Los platos** — los siete platos. Foto + nombre + tres líneas de Julián. Sin receta, sin fecha.
+
+5. **El equipo** — Victoria, Nicolás, Mara, Tomás. Retrato + rol mínimo + una línea.
+
+6. **La lista de espera** — "Rescoldo regresa. Otoño 2031." + campo de email. Puede no enviar a ningún lado o enviar un acuse de recibo diegético.
+
+7. **Footer diegético** — ver sección específica.
+
+## Mecanismos diegéticos específicos
+
+### Weather widget (modelo Brae)
+
+Mostrar el clima real de Barracas en tiempo real. API gratuita de weather. Una línea:
 
 ```
-/               → Homepage (scroll narrativo largo)
-/temporada      → El journal completo
-/territorio     → Los cinco territorios
-/equipo         → El equipo
-404             → Página de temporada cerrada
+Barracas, Buenos Aires — 17°C · Despejado · 14 de marzo de 2030
 ```
 
-### Homepage — secuencia de scroll
-
-1. Hero full-bleed (mesa del patio)
-2. Weather widget (una línea, top-right)
-3. La declaración (texto Julián, serif, 65ch)
-4. El territorio (5 módulos, grid 2col/1col)
-5. Los platos (7 módulos, alternado izq/der)
-6. El equipo (4 retratos + Julián como voz)
-7. Lista de espera ("Rescoldo regresa. Otoño 2031.")
-8. Footer diegético
-
-## Mecanismos diegéticos
-
-### Weather widget
-```js
-// Open-Meteo API — sin key requerida
-// Coordenadas Barracas: -34.6677, -58.3716
-// La fecha muestra 2030, el clima es real de hoy
-```
+Crea inmediatez temporal sin complejidad técnica. La fecha 2030 convive con el clima real de hoy — esa tensión es correcta y no necesita resolverse.
 
 ### Footer diegético
+
 ```
 Rescoldo — Lanín 234, Barracas, Buenos Aires
 Primera temporada: marzo–mayo 2030
@@ -99,58 +134,99 @@ Primera temporada: marzo–mayo 2030
 Texto: Julián Arce
 Cerámica y diseño: Victoria Nabel
 Espacio: Nicolás Sardi, Mara Villanueva, Tomás Ferreyra
-Fotografía: Sebastián Ríos
+Fotografía: [nombre ficticio]
 
-CUIT: 20-42187634-9
+CUIT: 20-XXXXXXXX-X
 © 2030 Julián Arce. Todos los derechos reservados.
 
-─────────────────────────────────────────
+─────────────────────────────────────────────
 Este es un proyecto de ficción que explora el futuro posible
 de la gastronomía de Buenos Aires.
-Un proyecto de Nicolás Bronzina — https://www.nicolasbronzina.com/
+Un proyecto de Nicolás Bronzina — https://www.nicolasbronzina.com/.
 ```
 
-### Página 404
+El disclaimer al final, tipografía pequeña, igual que futures-in-maps.com/san-telmo.
+
+### Citas de prensa diegéticas
+
+En la sección del equipo o como elemento flotante:
+
+```
+"Una de las aperturas más silenciosas y más necesarias del año."
+— revista Lento, mayo 2030
+```
+
+Medios ficticios con nombres plausibles. No links porque no llevan a ningún lado.
+
+### La página 404
+
 ```
 Esta sección de la temporada está cerrada.
 Rescoldo opera entre marzo y mayo.
 Próxima apertura: otoño 2031.
-← Volver al journal
 ```
 
-### Cita de prensa diegética
-```
-"Una de las aperturas más silenciosas y más necesarias del año."
-— Lento, revista de gastronomía · mayo 2030
-```
+## Decisiones técnicas
 
-### Menú con precios
-```
-Menú de degustación — $185.000 por persona · vinos a elección
-```
+### Stack recomendado
 
-## Reglas — no negociables
+- Next.js (App Router) → para SSG + ISR si hay contenido dinámico
+- Tailwind CSS con los tokens del sistema de diseño
+- Framer Motion para las únicas dos animaciones: scroll fade-in de textos largos + parallax muy sutil en hero
+- Vercel para deploy
 
-1. Fondo siempre `#FEFCF9` — nunca blanco puro
-2. Máximo dos animaciones en toda la web
-3. Ancho de columna de texto: `65ch` máximo
-4. Sin food styling — fotos documentales únicamente
-5. Sin emojis, sin iconos decorativos, sin ilustraciones
-6. `--color-accent` solo en detalles puntuales, nunca en bloques
-7. Navegación máximo 3 links
-8. El disclaimer de ficción va en el footer, nunca al principio
-9. No agregar sección de reservas
-10. No usar imágenes de stock — solo imágenes del proyecto
+### Imágenes
 
-## Referentes
+- WebP para todas las imágenes de contenido
+- AVIF para hero y full-bleeds
+- Lazy loading con blur-up placeholder
+- Art direction en mobile: crops distintos para vertical (priorizan el centro del sujeto, no la composición horizontal)
+- Las imágenes documentales van sin caption en homepage. Caption solo en secciones de territorio y platos.
+
+### Tipografía web
+
+- Freight Text Pro vía Adobe Fonts o sustituir con Cormorant Garamond (Google Fonts, gratuita)
+- DM Sans vía Google Fonts (ya en el libro)
+- Font loading: font-display: swap para evitar FOUT en serif
+
+### Mobile
+
+La experiencia primaria es desktop — la audiencia de diseño y gastronomía de autor usa desktop. Mobile debe ser legible sin degradarse:
+
+- El scroll narrativo funciona igual en vertical
+- Las imágenes se recortan con art direction
+- La navigation colapsa a un hamburger mínimo
+
+## Lo que Brae hace que Rescoldo debe hacer
+
+El sistema de Brae (Studio Round, Melbourne) es el referente técnico más cercano:
+
+1. **El sistema tipográfico es estacional** — en Rescoldo, el otoño tiene sus propias decisiones. Paleta de otoño austral: los amarillos del paraíso, los grises del Riachuelo, el ámbar del horno encendido.
+
+2. **La fotografía es de territorio, no de plato** — la foto del suelo del patio, la foto de las manos de Victoria con arcilla, la foto del río marrón del Delta. El plato es secundario.
+
+3. **La web y el objeto impreso son el mismo sistema** — los tokens CSS son los mismos valores que los del libro de Illustrator. #FEFCF9, #2D2D2D, DM Sans, Lora. No son "inspirados en" — son los mismos.
+
+## Conexión con el universo diegético compartido
+
+La web de Rescoldo existe en el mismo año que el Mercado San Telmo 2030 (futures-in-maps.com/san-telmo). Son dos artefactos del mismo universo. Pueden coexistir sin contradicción:
+
+- San Telmo 2030: sostenibilidad institucionalizada, visible, certificada, turística
+- Rescoldo 2030: sin certificaciones, sin visibilidad, 10 cubiertos, abastecido por personas con nombre propio
+
+Si en algún momento hay una referencia cruzada entre ambos proyectos — una cita del San Telmo en el insert de La Ciudad, un link entre webs — eso refuerza la credibilidad diegética de ambos universos.
+
+## Referentes aplicados por decisión
 
 | Decisión | Referente |
 |----------|-----------|
 | Scroll narrativo largo | Hiša Franko |
-| Weather widget + sistema estacional | Brae |
-| Tipografía editorial web | Brae / Ark Journal |
-| Voz primera persona diegética | Noma Weather Report |
-| Mundanidad burocrática | Near Future Laboratory (TBD Catalog) |
-| Video fijo + texto móvil | Septime |
+| Weather widget | Brae |
+| Sistema tipográfico | Brae / Ark Journal |
+| Voz primera persona | Noma Weather Report / Superflux |
+| Mundanidad diegética | Near Future Laboratory |
+| Archivo de temporadas | Fulgurances / Central/Mater |
+| Editorial activa | Attica Digest |
 | Footer disclaimer | futures-in-maps.com/san-telmo |
-| Layout journal /temporada | René Redzepi, A Work in Progress (Phaidon/Pentagram) |
+| Fotografía | Brae (Scottie Cameron) |
+| Video fijo + texto móvil | Septime |

@@ -6,14 +6,14 @@ Leé este archivo completo antes de hacer cualquier cosa.
 
 Las siguientes guías están en docs/skills/ y deben consultarse antes de ejecutar cualquier tarea relacionada:
 
-- rescoldo-voice.md → voz de Julián Arce, personajes, proveedores, platos del menú, universo diegético
-- rescoldo-web.md → tokens CSS, arquitectura web, mecanismos diegéticos, referentes de diseño
-- diegetic-fiction-web.md → principios diegéticos, tabla de decisiones, qué no hacer en una web de ficción
-- editorial-layout.md → specs del libro PDF (220×290mm), tipografía, estado de artboards, ritmo editorial
-- nano-banana-brief.md → templates de prompts visuales por categoría (plato, espacio, retrato, paisaje, textura)
-- fotoperiodismo.md → criterios documentales, checklist de evaluación de imagen, decisión editorial de página
-- anti-slop.md → escritura sin slop + microcopy UI específico de Rescoldo + reglas de diseño antislop
-- redzepi-journal.md → modelo editorial Phaidon/Pentagram para /temporada en la web y Cap. III del PDF
+- **rescoldo-voice.md** → voz de Julián Arce, personajes, proveedores, platos del menú, universo diegético
+- **rescoldo-web.md** → tokens CSS, arquitectura web, mecanismos diegéticos, referentes de diseño
+- **diegetic-fiction-web.md** → principios diegéticos, tabla de decisiones, qué no hacer en una web de ficción
+- **editorial-layout.md** → specs del libro PDF (220×290mm), tipografía, estado de artboards, ritmo editorial
+- **nano-banana-brief.md** → templates de prompts visuales por categoría (plato, espacio, retrato, paisaje, textura)
+- **fotoperiodismo.md** → criterios documentales, checklist de evaluación de imagen, decisión editorial de página
+- **anti-slop.md** → escritura sin slop + microcopy UI específico de Rescoldo + reglas de diseño antislop
+- **redzepi-journal.md** → modelo editorial Phaidon/Pentagram para /temporada en la web y Cap. III del PDF
 
 ### Reglas de aplicación
 
