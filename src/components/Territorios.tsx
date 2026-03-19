@@ -60,8 +60,15 @@ export function Territorios() {
         </ScrollFadeIn>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-16">
-          {territorios.map((t) => (
-            <ScrollFadeIn key={t.nombre}>
+          {territorios.map((t, i) => (
+            <ScrollFadeIn
+              key={t.nombre}
+              className={
+                i === territorios.length - 1 && territorios.length % 2 === 1
+                  ? "md:col-span-2 md:max-w-[50%] md:mx-auto"
+                  : undefined
+              }
+            >
               <div>
                 <div className="aspect-[4/3] relative overflow-hidden bg-surface mb-6">
                   <Image
