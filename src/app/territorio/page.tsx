@@ -84,10 +84,11 @@ export default function Territorio() {
           </div>
         </ScrollFadeIn>
 
-        <div className="space-y-24">
-          {territorios.map((t, i) => (
-            <ScrollFadeIn key={t.nombre}>
+        <ScrollFadeIn>
+          <div className="space-y-24">
+            {territorios.map((t, i) => (
               <div
+                key={t.nombre}
                 className={`md:flex md:gap-16 md:items-start ${
                   i % 2 === 1 ? "md:flex-row-reverse" : ""
                 }`}
@@ -122,9 +123,9 @@ export default function Territorio() {
                   </p>
                 </div>
               </div>
-            </ScrollFadeIn>
-          ))}
-        </div>
+            ))}
+          </div>
+        </ScrollFadeIn>
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ export function Vino() {
             Sin sulfitos agregados, levaduras espontáneas.
           </p>
           <p className="font-mono text-xs text-muted">
-            Incluido en el menú de degustación · servicio a cargo de Lara Espina
+            Vinos a elección · servicio a cargo de Lara Espina
           </p>
         </div>
       </ScrollFadeIn>

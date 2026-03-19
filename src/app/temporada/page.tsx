@@ -68,7 +68,7 @@ export default function Temporada() {
         <h1 className="font-serif text-2xl text-text mb-2">
           Diario de la temporada
         </h1>
-        <p className="font-serif text-lg text-secondary mb-24" style={{ lineHeight: 1.8 }}>
+        <p className="font-serif text-lg text-secondary leading-loose mb-24">
           Lanín 234, Barracas
         </p>
 
@@ -81,7 +81,7 @@ export default function Temporada() {
             />
 
             {/* Fecha como elemento tipográfico */}
-            <p className="font-mono text-xl text-muted mb-1">
+            <p className="font-mono text-journal-date text-muted mb-1">
               {entrada.dia}
             </p>
             <p className="font-mono text-xs text-muted mb-8 tracking-wider uppercase">
@@ -95,8 +95,7 @@ export default function Temporada() {
 
             {/* Cuerpo */}
             <p
-              className="font-serif text-lg text-text"
-              style={{ lineHeight: 1.8 }}
+              className="font-serif text-lg text-text leading-loose"
             >
               {entrada.texto}
             </p>

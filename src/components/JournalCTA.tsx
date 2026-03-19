@@ -20,7 +20,7 @@ export function JournalCTA() {
 
         <button
           onClick={() => setClicked(true)}
-          className="px-6 py-3 bg-accent text-bg font-sans text-sm hover:opacity-90"
+          className="px-6 py-3 border border-accent text-accent font-sans text-sm hover:bg-accent hover:text-bg transition-colors"
         >
           Descargar journal
         </button>

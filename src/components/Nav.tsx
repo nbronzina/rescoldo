@@ -34,7 +34,7 @@ export function Nav() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 bg-bg/95 backdrop-blur-sm ${
+      className={`fixed top-0 left-0 right-0 z-50 bg-bg/95 backdrop-blur-sm transition-transform duration-300 ease-in-out ${
         visible ? "" : "-translate-y-full"
       }`}
     >

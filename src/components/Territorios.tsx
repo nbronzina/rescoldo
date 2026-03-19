@@ -59,17 +59,17 @@ export function Territorios() {
           </p>
         </ScrollFadeIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-16">
-          {territorios.map((t, i) => (
-            <ScrollFadeIn
-              key={t.nombre}
-              className={
-                i === territorios.length - 1 && territorios.length % 2 === 1
-                  ? "md:col-span-2 md:max-w-[50%] md:mx-auto"
-                  : undefined
-              }
-            >
-              <div>
+        <ScrollFadeIn>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-16">
+            {territorios.map((t, i) => (
+              <div
+                key={t.nombre}
+                className={
+                  i === territorios.length - 1 && territorios.length % 2 === 1
+                    ? "md:col-span-2 md:max-w-[50%] md:mx-auto"
+                    : undefined
+                }
+              >
                 <div className="aspect-[4/3] relative overflow-hidden bg-surface mb-6">
                   <Image
                     src={t.imagen}
@@ -89,9 +89,9 @@ export function Territorios() {
                   {t.descripcion}
                 </p>
               </div>
-            </ScrollFadeIn>
-          ))}
-        </div>
+            ))}
+          </div>
+        </ScrollFadeIn>
       </div>
     </section>
   );

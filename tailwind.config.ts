@@ -28,9 +28,11 @@ const config: Config = {
         xl: "1.5rem",
         "2xl": "2.5rem",
         hero: "clamp(3rem, 8vw, 7rem)",
+        "journal-date": "2.25rem",
       },
       lineHeight: {
         body: "1.6",
+        loose: "1.8",
       },
       maxWidth: {
         measure: "65ch",

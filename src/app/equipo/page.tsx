@@ -6,7 +6,7 @@ const equipo = [
     nombre: "Julián Arce",
     rol: "Cocina",
     imagen: "/images/equipo/julian-arce.webp",
-    bio: "Treinta y cuatro años. Diez en el equipo interno de fermentación de Noma Copenhagen. Volvió a Buenos Aires en 2029 con la idea de cocinar en un lugar que ya existiera. Encontró la casa de Lanín un jueves de diciembre.",
+    bio: "Treinta y cuatro años. Cuatro años en el equipo de fermentación de Noma Copenhagen. Volvió a Buenos Aires en 2029 con la idea de cocinar en un lugar que ya existiera. Encontró la casa de Lanín un jueves de diciembre.",
   },
   {
     nombre: "Lara Espina",
@@ -66,10 +66,11 @@ export default function EquipoPage() {
           </div>
         </ScrollFadeIn>
 
-        <div className="space-y-20">
-          {equipo.map((persona, i) => (
-            <ScrollFadeIn key={persona.nombre}>
+        <ScrollFadeIn>
+          <div className="space-y-20">
+            {equipo.map((persona, i) => (
               <div
+                key={persona.nombre}
                 className={`md:flex md:gap-16 md:items-start ${
                   i % 2 === 1 ? "md:flex-row-reverse" : ""
                 }`}
@@ -98,9 +99,9 @@ export default function EquipoPage() {
                   </p>
                 </div>
               </div>
-            </ScrollFadeIn>
-          ))}
-        </div>
+            ))}
+          </div>
+        </ScrollFadeIn>
       </div>
     </div>
   );

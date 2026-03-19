@@ -73,10 +73,11 @@ export function Platos() {
           </p>
         </ScrollFadeIn>
 
-        <div className="space-y-24">
-          {platos.map((plato, i) => (
-            <ScrollFadeIn key={plato.numero}>
+        <ScrollFadeIn>
+          <div className="space-y-24">
+            {platos.map((plato, i) => (
               <div
+                key={plato.numero}
                 className={`md:flex md:gap-16 md:items-start ${
                   i % 2 === 1 ? "md:flex-row-reverse" : ""
                 }`}
@@ -105,9 +106,9 @@ export function Platos() {
                   </p>
                 </div>
               </div>
-            </ScrollFadeIn>
-          ))}
-        </div>
+            ))}
+          </div>
+        </ScrollFadeIn>
       </div>
     </section>
   );

@@ -3,21 +3,6 @@ import { ScrollFadeIn } from "./ScrollFadeIn";
 
 const equipo = [
   {
-    nombre: "Julián Arce",
-    rol: "Cocina",
-    imagen: "/images/equipo/julian-arce.webp",
-  },
-  {
-    nombre: "Lara Espina",
-    rol: "Servicio y gestión",
-    imagen: "/images/equipo/lara-espina.webp",
-  },
-  {
-    nombre: "Santiago Orbe",
-    rol: "Fermentación",
-    imagen: "/images/equipo/santiago-orbe.webp",
-  },
-  {
     nombre: "Victoria Nabel",
     rol: "Cerámica y diseño de imagen",
     imagen: "/images/equipo/victoria-nabel.webp",
@@ -47,22 +32,18 @@ export function Equipo() {
           <p className="font-sans text-sm tracking-widest uppercase text-secondary mb-16">
             El equipo
           </p>
-        </ScrollFadeIn>
 
-        <ScrollFadeIn>
           <div className="max-w-measure mb-20">
             <p className="font-serif text-lg leading-body text-text">
-              La cocina es de Julián Arce. Pero Rescoldo no es solo cocina. Es
-              un espacio construido por siete personas que dejaron lo que estaban
+              La cocina es de Julián. Pero Rescoldo no es solo cocina. Es un
+              espacio construido por siete personas que dejaron lo que estaban
               haciendo para armar una temporada en una casa de Barracas.
             </p>
           </div>
-        </ScrollFadeIn>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
-          {equipo.map((persona) => (
-            <ScrollFadeIn key={persona.nombre}>
-              <div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+            {equipo.map((persona) => (
+              <div key={persona.nombre}>
                 <div className="aspect-[3/4] relative overflow-hidden bg-surface mb-4">
                   <Image
                     src={persona.imagen}
@@ -79,9 +60,9 @@ export function Equipo() {
                   {persona.rol}
                 </p>
               </div>
-            </ScrollFadeIn>
-          ))}
-        </div>
+            ))}
+          </div>
+        </ScrollFadeIn>
       </div>
     </section>
   );
