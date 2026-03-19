@@ -28,11 +28,13 @@ export function Footer() {
           {/* Separador entre bloques */}
           <div className="border-t border-surface pt-8">
             {/* Bloque 2 — Créditos */}
-            <div className="space-y-1 text-sm text-secondary font-sans mb-8">
-              <p>Texto: Julián Arce</p>
-              <p>Cerámica y diseño: Victoria Nabel</p>
-              <p>Espacio: Nicolás Sardi, Mara Villanueva, Tomás Ferreyra</p>
-              <p>Fotografía: Sebastián Ríos</p>
+            <div className="space-y-1 text-sm font-sans mb-8">
+              <p><span className="text-secondary">Texto: </span><span className="text-text">Julián Arce</span></p>
+              <p><span className="text-secondary">Fermentación: </span><span className="text-text">Santiago Orbe</span></p>
+              <p><span className="text-secondary">Cerámica y diseño: </span><span className="text-text">Victoria Nabel</span></p>
+              <p><span className="text-secondary">Servicio: </span><span className="text-text">Lara Espina</span></p>
+              <p><span className="text-secondary">Espacio: </span><span className="text-text">Nicolás Sardi, Mara Villanueva, Tomás Ferreyra</span></p>
+              <p><span className="text-secondary">Fotografía: </span><span className="text-text">Sebastián Ríos</span></p>
             </div>
 
             {/* Legal diegético */}
