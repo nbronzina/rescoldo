@@ -20,12 +20,15 @@ export function HeroParallax() {
         style={{ y }}
       >
         <Image
-          src="/images/hero/mesa-patio.jpg"
-          alt="Mesa del patio de Rescoldo con vajilla, vasos y cubiertos"
+          src="/images/hero/mesa-patio.jpeg"
+          alt="Mesa larga en el patio de Rescoldo, vajilla de cerámica bajo el árbol"
           fill
           sizes="100vw"
-          className="object-cover"
+          className="object-cover object-center"
           priority
+          quality={85}
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAb/xAAmEAACAQMDAgcBAAAAAAAAAAABAgMEESEABTESEwYiM0FRYYGx/8QAFAEBAAAAAAAAAAAAAAAAAAAABf/EABkRAAIDAQAAAAAAAAAAAAAAAAABAgMhIv/aAAwDAQACEQMRAD8Aity3XbKdZKecy1NaWHclCYYHAbnBtfHAP1pCHc5UWSKvWKNx1LGqGyA8AZ4Goyqr4IZZ4pKVpW6ulnaTJsce2Lf3Rl8SVEahB3LL5fU+PzRSozBF2Ri+j//Z"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-surface/20 to-bg/60" />
       </motion.div>
