@@ -5,13 +5,13 @@ const entradas = [
     fecha: "12 de marzo de 2030",
     titulo: "El primer fuego",
     texto:
-      "Encendimos el horno a las seis de la mañana. Nicolás había terminado de levantar la última columna la noche anterior. El barro estaba fresco todavía. Le dimos fuego despacio, con leña de paraíso del mismo patio. A las diez de la mañana el horno ya respiraba solo. Lara trajo café y nos sentamos los seis en la galería a mirar cómo el humo subía entre las columnas. Nadie dijo nada. No hacía falta.",
+      "Encendimos el horno a las seis de la mañana. Nicolás había terminado de construir el horno la noche anterior. El barro estaba fresco todavía. Le dimos fuego despacio, con leña de paraíso del mismo patio. A las diez de la mañana el horno ya respiraba solo. Lara trajo café y nos sentamos los seis en la galería a mirar cómo el humo subía entre las columnas. Nadie dijo nada. No hacía falta.",
   },
   {
     fecha: "18 de marzo de 2030",
     titulo: "La mesa",
     texto:
-      "La mesa llegó del Delta en una lancha de carga. Madera de demolición de un muelle viejo de Tigre. Tomás la lijó tres días hasta que la superficie quedó suave pero irregular, con las marcas del agua y los nudos a la vista. Tiene lugar para diez personas. Once si apretamos. No vamos a apretar.",
+      "La mesa llegó del Delta en una lancha de carga. Madera de demolición de un muelle viejo de Tigre. Nicolás la trabajó tres días hasta que la superficie quedó suave pero irregular, con las marcas del agua y los nudos a la vista. Tiene lugar para diez personas. Once si apretamos. No vamos a apretar.",
   },
   {
     fecha: "27 de marzo de 2030",
@@ -41,7 +41,7 @@ const entradas = [
     fecha: "28 de mayo de 2030",
     titulo: "Último servicio",
     texto:
-      "La última noche cocinamos para nosotros. Los seis, sentados a la mesa que Tomás armó. Los mismos siete platos del menú. El mismo vino de Rubén. Victoria sacó las piezas que nunca usó en servicio: unos cuencos de porcelana con el interior esmaltado en rojo oscuro. Apagamos el horno a la medianoche. La casa quedó en silencio. La temporada terminó.",
+      "La última noche cocinamos para nosotros. Los seis, sentados a la mesa que Nicolás armó. Los mismos siete platos del menú. El mismo vino de Rubén. Victoria sacó las piezas que nunca usó en servicio: unos cuencos de porcelana con el interior esmaltado en rojo oscuro. Apagamos el horno a la medianoche. La casa quedó en silencio. La temporada terminó.",
   },
 ];
 

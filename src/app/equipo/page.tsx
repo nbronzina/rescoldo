@@ -24,13 +24,13 @@ const equipo = [
     nombre: "Victoria Nabel",
     rol: "Cerámica y diseño de imagen",
     imagen: "/images/equipo/victoria-nabel.jpg",
-    bio: "Hace toda la vajilla de Rescoldo a mano en su taller de San Telmo. Gres, porcelana, esmaltes propios. También diseña la identidad visual del proyecto: la tipografía, los menús impresos, este sitio.",
+    bio: "Hace toda la vajilla de Rescoldo a mano en su taller de Villa del Parque. Gres, porcelana, esmaltes propios. También diseña la identidad visual del proyecto: la tipografía, los menús impresos, este sitio.",
   },
   {
     nombre: "Nicolás Sardi",
     rol: "Construcción del espacio",
     imagen: "/images/equipo/nicolas-sardi.jpg",
-    bio: "Construyó el horno de barro, levantó las columnas de la galería, restauró el piso de la casa. Trabaja con materiales de demolición y técnicas de construcción tradicional.",
+    bio: "Construyó el horno de barro entre las columnas de la galería, trabajó la mesa con madera de demolición del Delta, restauró el piso de la casa. Trabaja con materiales de demolición y técnicas de construcción tradicional.",
   },
   {
     nombre: "Mara Villanueva",
@@ -42,7 +42,7 @@ const equipo = [
     nombre: "Tomás Ferreyra",
     rol: "Diseño de experiencia",
     imagen: "/images/equipo/tomas-ferreyra.jpg",
-    bio: "Arquitecto inconcluso. Diseñó la mesa, las sillas, la disposición del espacio. Todo lo que el cuerpo toca durante las tres horas del servicio pasó por las manos de Tomás.",
+    bio: "Arquitecto inconcluso. Diseñó las sillas, la disposición del espacio, la secuencia de movimientos. Todo lo que el cuerpo toca durante las tres horas del servicio pasó por las manos de Tomás.",
   },
 ];
 

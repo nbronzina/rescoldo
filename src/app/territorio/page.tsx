@@ -42,7 +42,7 @@ const territorios = [
     nombre: "La Costa",
     ubicacion: "Bahía Samborombón",
     coordenadas: "-35.7500, -57.4167",
-    distancia: "280 km al sudeste",
+    distancia: "170 km al sureste",
     proveedor: "Ramona Calderón, pescadora artesanal",
     ingredientes: "Corvina rubia, pescadilla, cangrejo azul",
     imagen: "/images/territorios/la-costa.jpg",
@@ -60,7 +60,7 @@ const territorios = [
     imagen: "/images/territorios/la-reserva.jpg",
     alt: "La Reserva Ecológica con cortaderas",
     texto:
-      "La Reserva Ecológica de Costanera Sur está a veinte minutos de la casa. Trescientas cincuenta hectáreas de naturaleza recuperada en lo que fue un relleno costero. Vamos a pie. Cortamos cortaderas jóvenes para el bocado de apertura. Juntamos carqueja silvestre y semillas de aguaribay para aceites y condimentos. Todo lo que usamos de la reserva crece sin intervención, a la vista de los edificios de Puerto Madero.",
+      "La Reserva Ecológica de Costanera Sur está a veinte minutos de la casa. Trescientas cincuenta hectáreas de naturaleza recuperada en lo que fue un relleno costero. Vamos a pie. En los bordes del camino de acceso y los terraplenes del Belgrano Sur juntamos cortaderas, carqueja y aguaribay. Todo crece sin intervención, a la vista de los edificios de Puerto Madero.",
   },
 ];
 
