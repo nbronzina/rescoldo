@@ -26,7 +26,7 @@ const entradas: {
     mes: "Marzo",
     titulo: "El primer fuego",
     texto:
-      "Encendimos el horno a las seis de la mañana. Nicolás había terminado de construir el horno la noche anterior. El barro estaba fresco todavía. Le dimos fuego despacio, con leña de paraíso del mismo patio. A las diez de la mañana el horno ya respiraba solo. Lara trajo café y nos sentamos los seis en la galería a mirar cómo el humo subía entre las columnas. Nadie dijo nada. No hacía falta.",
+      "Encendimos el horno a las seis de la mañana. Nicolás había terminado de construir el horno la noche anterior. El barro estaba fresco todavía. Le dimos fuego despacio, con leña de paraíso del mismo patio. A las diez de la mañana el horno ya respiraba solo. Lara trajo café y nos sentamos los siete en la galería a mirar cómo el humo subía entre las columnas. Nadie dijo nada. No hacía falta.",
   },
   {
     dia: "18",
