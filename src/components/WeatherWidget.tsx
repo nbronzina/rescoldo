@@ -35,11 +35,21 @@ const DIAS = [
   "domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado",
 ];
 
+interface WeatherData {
+  location: string;
+  detail: string;
+}
+
 export function WeatherWidget() {
-  const [weather, setWeather] = useState<string | null>(null);
+  const [weather, setWeather] = useState<WeatherData | null>(null);
 
   useEffect(() => {
     async function fetchWeather() {
+      const now = new Date();
+      const dia = DIAS[now.getDay()];
+      const fecha = now.getDate();
+      const mes = MESES[now.getMonth()];
+
       try {
         const res = await fetch(
           "https://api.open-meteo.com/v1/forecast?latitude=-34.6677&longitude=-58.3716&current=temperature_2m,weathercode"
@@ -49,22 +59,15 @@ export function WeatherWidget() {
         const code = data.current.weathercode as number;
         const condition = WMO_CODES[code] || "Variable";
 
-        const now = new Date();
-        const dia = DIAS[now.getDay()];
-        const fecha = now.getDate();
-        const mes = MESES[now.getMonth()];
-
-        setWeather(
-          `Barracas, Buenos Aires — ${temp}°C · ${condition} · ${dia} ${fecha} de ${mes} de 2030`
-        );
+        setWeather({
+          location: "Barracas, Buenos Aires",
+          detail: `${dia} ${fecha} de ${mes} de 2030 · ${temp}°C · ${condition}`,
+        });
       } catch {
-        const now = new Date();
-        const dia = DIAS[now.getDay()];
-        const fecha = now.getDate();
-        const mes = MESES[now.getMonth()];
-        setWeather(
-          `Barracas, Buenos Aires — ${dia} ${fecha} de ${mes} de 2030`
-        );
+        setWeather({
+          location: "Barracas, Buenos Aires",
+          detail: `${dia} ${fecha} de ${mes} de 2030`,
+        });
       }
     }
     fetchWeather();
@@ -73,6 +76,9 @@ export function WeatherWidget() {
   if (!weather) return null;
 
   return (
-    <p className="font-mono text-xs text-muted whitespace-nowrap">{weather}</p>
+    <div className="font-mono text-xs text-muted">
+      <p>{weather.location}</p>
+      <p>{weather.detail}</p>
+    </div>
   );
 }
