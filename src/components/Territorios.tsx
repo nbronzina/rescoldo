@@ -14,7 +14,7 @@ const territorios = [
   {
     nombre: "El Bosque",
     ubicacion: "Esquel, Chubut",
-    proveedor: "Santiago Orbe, biólogo — CIEFAP",
+    proveedor: "Santiago Orbe, equipo Rescoldo",
     imagen: "/images/territorios/el-bosque.webp",
     alt: "Santiago Orbe buscando hongos en el bosque de lenga",
     descripcion:
@@ -23,7 +23,7 @@ const territorios = [
   {
     nombre: "El Río",
     ubicacion: "Delta del Paraná",
-    proveedor: "Pilar Iraola",
+    proveedor: "Pilar Iraola, guía",
     imagen: "/images/territorios/el-rio.webp",
     alt: "Pilar Iraola en la lancha por los arroyos del Delta",
     descripcion:

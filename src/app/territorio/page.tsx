@@ -19,24 +19,24 @@ const territorios = [
     ubicacion: "Esquel, Chubut",
     coordenadas: "-42.9167, -71.3167",
     distancia: "1.840 km al sudoeste",
-    proveedor: "Santiago Orbe, biólogo — CIEFAP",
+    proveedor: "Santiago Orbe, Rescoldo",
     ingredientes: "Morillas, llao llao, hongos de lenga",
     imagen: "/images/territorios/el-bosque.webp",
     alt: "Santiago Orbe buscando hongos en el bosque de lenga",
     texto:
-      "Entre los 800 y los 1.400 metros de altura, en los bosques de lenga y coihue de la cordillera chubutense, crecen las morillas y el llao llao. Santiago Orbe trabaja en el CIEFAP y recolecta en temporada, secando lo que no se consume fresco. Las morillas llegan deshidratadas en frascos de vidrio. El llao llao viaja fresco, envuelto en hojas de nalca, y hay que usarlo en los tres días siguientes.",
+      "Entre los 800 y los 1.400 metros de altura, en los bosques de lenga y coihue de la cordillera chubutense, crecen las morillas y el llao llao. Santiago va dos veces por temporada. Trabaja con el CIEFAP, que conoce los rodales y los ciclos de cada especie. Las morillas llegan deshidratadas en frascos de vidrio. El llao llao viaja fresco, envuelto en hojas de nalca, y hay que usarlo en los tres días siguientes.",
   },
   {
     nombre: "El Río",
     ubicacion: "Delta del Paraná",
     coordenadas: "-34.3500, -58.5833",
     distancia: "50 km al norte",
-    proveedor: "Pilar Iraola, bióloga y especialista en humedales",
+    proveedor: "Pilar Iraola, bióloga",
     ingredientes: "Juncos, verdolaga, miel de isla",
     imagen: "/images/territorios/el-rio.webp",
     alt: "Pilar Iraola en la lancha por los arroyos del Delta",
     texto:
-      "Pilar trabaja en el delta bajo desde hace quince años, estudiando los ciclos de crecida y los humedales de la segunda sección de islas. Conoce cada arroyo y cada albardón. Los juncos maduros los corta en abril, cuando la sal del tallo está concentrada. La verdolaga crece silvestre entre los sauces. La miel viene de colmenas que mantiene un isleño vecino hace treinta años.",
+      "Pilar lleva al equipo en lancha por los arroyos del bajo. Conoce cada albardón y cada ciclo de crecida. Los juncos maduros los cortamos en abril, cuando la sal del tallo está concentrada. La verdolaga crece silvestre entre los sauces. La miel viene de Oriente, un isleño que tiene cuarenta colmenas hace treinta años.",
   },
   {
     nombre: "La Costa",
