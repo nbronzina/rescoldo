@@ -6,20 +6,20 @@ const territorios = [
     ubicacion: "Santiago del Estero",
     coordenadas: "-27.7833, -64.2667",
     distancia: "1.080 km al noroeste",
-    proveedor: "Raúl Heredia, recolector",
+    proveedor: "Raúl Cálderes, recolector",
     ingredientes: "Algarroba, chañar, mistol",
     texto:
-      "El monte seco santiagueño produce frutos que nadie más busca. Raúl Heredia recolecta algarroba y chañar desde hace cincuenta años en las afueras de Añatuya. Muele la algarroba en un mortero de quebracho que heredó de su madre. El arrope de chañar lo hace en una olla de hierro sobre fuego de leña. Nos manda dos envíos por temporada. Cada bolsa de arpillera llega con un papel donde anota el día de recolección y el estado del monte.",
+      "El monte seco santiagueño produce frutos que nadie más busca. Raúl Cálderes recolecta algarroba y chañar desde hace cincuenta años en las afueras de Fernández. Muele la algarroba en un mortero de quebracho que heredó de su madre. El arrope de chañar lo hace en una olla de hierro sobre fuego de leña. Nos manda dos envíos por temporada. Cada bolsa de arpillera llega con un papel donde anota el día de recolección y el estado del monte.",
   },
   {
     nombre: "El Bosque",
     ubicacion: "Esquel, Chubut",
     coordenadas: "-42.9167, -71.3167",
     distancia: "1.840 km al sudoeste",
-    proveedor: "Comunidad Mapuche Pillán Mahuiza",
+    proveedor: "Santiago Orbe, biólogo — CIEFAP",
     ingredientes: "Morillas, llao llao, hongos de lenga",
     texto:
-      "Entre los 800 y los 1.400 metros de altura, en los bosques de lenga y coihue de la cordillera chubutense, crecen las morillas y el llao llao. La comunidad Pillán Mahuiza recolecta en temporada y seca lo que no se consume fresco. Las morillas llegan deshidratadas en frascos de vidrio. El llao llao viaja fresco, envuelto en hojas de nalca, y hay que usarlo en los tres días siguientes.",
+      "Entre los 800 y los 1.400 metros de altura, en los bosques de lenga y coihue de la cordillera chubutense, crecen las morillas y el llao llao. Santiago Orbe trabaja en el CIEFAP y recolecta en temporada, secando lo que no se consume fresco. Las morillas llegan deshidratadas en frascos de vidrio. El llao llao viaja fresco, envuelto en hojas de nalca, y hay que usarlo en los tres días siguientes.",
   },
   {
     nombre: "El Río",

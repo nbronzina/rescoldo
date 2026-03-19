@@ -23,7 +23,7 @@ const entradas = [
     fecha: "4 de abril de 2030",
     titulo: "Raúl",
     texto:
-      "Raúl Heredia vino desde Añatuya con dos bolsas de algarroba y una de chañar. Tiene setenta y dos años. Recolecta en el monte desde que tiene memoria. Le mostré el horno y se quedó mirándolo un rato largo. Después dijo que estaba bien hecho. De Raúl, eso es mucho.",
+      "Raúl Cálderes vino desde Fernández con dos bolsas de algarroba y una de chañar. Tiene setenta y dos años. Recolecta en el monte desde que tiene memoria. Le mostré el horno y se quedó mirándolo un rato largo. Después dijo que estaba bien hecho. De Raúl, eso es mucho.",
   },
   {
     fecha: "19 de abril de 2030",

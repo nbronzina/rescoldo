@@ -13,7 +13,7 @@ const platos = [
     tipo: "Entrada fría",
     nombre: "Corvina curada, sal de junco, limón de quinta, aceite de peperina",
     descripcion:
-      "Corvina rubia de Samborombón curada cuarenta y ocho horas en sal de junco del Delta. Limón de una quinta de Barracas. Peperina seca de Traslasierra.",
+      "Corvina rubia de Samborombón curada veinte minutos en sal de junco del Delta. Limón de una quinta abandonada del Delta. Peperina seca de Traslasierra.",
   },
   {
     numero: 3,
@@ -41,7 +41,7 @@ const platos = [
     tipo: "Quiebre dulce",
     nombre: "Pan de algarroba con trigo, miel de isla, manteca",
     descripcion:
-      "Pan que hacemos cada mañana con harina de algarroba de Raúl y trigo orgánico. Miel silvestre de las islas del Delta. Manteca de campo.",
+      "Pan que hacemos cada mañana con harina de algarroba de Raúl Cálderes y trigo orgánico. Miel silvestre de las islas del Delta. Manteca de campo.",
   },
   {
     numero: 7,

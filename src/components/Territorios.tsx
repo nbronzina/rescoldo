@@ -4,14 +4,14 @@ const territorios = [
   {
     nombre: "El Monte",
     ubicacion: "Santiago del Estero",
-    proveedor: "Raúl Heredia",
+    proveedor: "Raúl Cálderes",
     descripcion:
-      "Algarroba, chañar, mistol. Los frutos del bosque seco que llegan en bolsas de arpillera desde Añatuya.",
+      "Algarroba, chañar, mistol. Los frutos del bosque seco que llegan en bolsas de arpillera desde Fernández.",
   },
   {
     nombre: "El Bosque",
     ubicacion: "Esquel, Chubut",
-    proveedor: "Comunidad Mapuche Pillán Mahuiza",
+    proveedor: "Santiago Orbe, biólogo — CIEFAP",
     descripcion:
       "Morillas silvestres, llao llao, hongos de lenga. Recolección de altura entre los 800 y los 1400 metros.",
   },
