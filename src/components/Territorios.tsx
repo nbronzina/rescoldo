@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ScrollFadeIn } from "./ScrollFadeIn";
 
 const territorios = [
@@ -5,6 +6,8 @@ const territorios = [
     nombre: "El Monte",
     ubicacion: "Santiago del Estero",
     proveedor: "Raúl Cálderes",
+    imagen: "/images/territorios/el-monte.jpg",
+    alt: "Raúl Cálderes moliendo algarroba",
     descripcion:
       "Algarroba, chañar, mistol. Los frutos del bosque seco que llegan en bolsas de arpillera desde Fernández.",
   },
@@ -12,6 +15,8 @@ const territorios = [
     nombre: "El Bosque",
     ubicacion: "Esquel, Chubut",
     proveedor: "Santiago Orbe, biólogo — CIEFAP",
+    imagen: "/images/territorios/el-bosque.jpg",
+    alt: "Santiago Orbe buscando hongos en el bosque de lenga",
     descripcion:
       "Morillas silvestres, llao llao, hongos de lenga. Recolección de altura entre los 800 y los 1400 metros.",
   },
@@ -19,6 +24,8 @@ const territorios = [
     nombre: "El Río",
     ubicacion: "Delta del Paraná",
     proveedor: "Pilar Iraola",
+    imagen: "/images/territorios/el-rio.jpg",
+    alt: "Pilar Iraola en la lancha por los arroyos del Delta",
     descripcion:
       "Juncos, verdolaga, miel de isla. Lo que crece entre los arroyos del delta bajo, a dos horas de lancha desde Tigre.",
   },
@@ -26,6 +33,8 @@ const territorios = [
     nombre: "La Costa",
     ubicacion: "Bahía Samborombón",
     proveedor: "Ramona Calderón",
+    imagen: "/images/territorios/la-costa.jpg",
+    alt: "Ramona Calderón pescando de noche en Bahía Samborombón",
     descripcion:
       "Corvina rubia, pescadilla, cangrejo azul. Pesca artesanal a 170 km al sureste de Buenos Aires.",
   },
@@ -33,6 +42,8 @@ const territorios = [
     nombre: "La Reserva",
     ubicacion: "Costanera Sur, Buenos Aires",
     proveedor: "Recolección propia",
+    imagen: "/images/territorios/la-reserva.jpg",
+    alt: "La Reserva Ecológica con cortaderas",
     descripcion:
       "Cortaderas, carqueja, aguaribay. Lo silvestre que crece a veinte minutos de la casa, dentro de la ciudad.",
   },
@@ -52,11 +63,15 @@ export function Territorios() {
           {territorios.map((t) => (
             <ScrollFadeIn key={t.nombre}>
               <div>
-                <div
-                  className="aspect-[4/3] bg-surface mb-6"
-                  role="img"
-                  aria-label={`Fotografía de ${t.nombre}, ${t.ubicacion}`}
-                />
+                <div className="aspect-[4/3] relative overflow-hidden bg-surface mb-6">
+                  <Image
+                    src={t.imagen}
+                    alt={t.alt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover"
+                  />
+                </div>
                 <p className="font-sans text-sm tracking-widest uppercase text-text mb-1">
                   {t.nombre}
                 </p>

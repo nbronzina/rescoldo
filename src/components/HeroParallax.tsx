@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
 
 export function HeroParallax() {
   const ref = useRef(null);
@@ -18,8 +19,15 @@ export function HeroParallax() {
         className="absolute inset-0 bg-surface"
         style={{ y }}
       >
-        {/* Placeholder — replace with mesa del patio image */}
-        <div className="absolute inset-0 bg-gradient-to-b from-surface to-bg/60" />
+        <Image
+          src="/images/hero/mesa-patio.jpg"
+          alt="Mesa del patio de Rescoldo con vajilla, vasos y cubiertos"
+          fill
+          sizes="100vw"
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-surface/20 to-bg/60" />
       </motion.div>
 
       {/* Text overlay */}

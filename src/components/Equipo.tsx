@@ -1,21 +1,26 @@
+import Image from "next/image";
 import { ScrollFadeIn } from "./ScrollFadeIn";
 
 const equipo = [
   {
     nombre: "Victoria Nabel",
     rol: "Cerámica y diseño de imagen",
+    imagen: "/images/equipo/victoria-nabel.jpg",
   },
   {
     nombre: "Nicolás Sardi",
     rol: "Construcción del espacio",
+    imagen: "/images/equipo/nicolas-sardi.jpg",
   },
   {
     nombre: "Mara Villanueva",
     rol: "Diseño del servicio",
+    imagen: "/images/equipo/mara-villanueva.jpg",
   },
   {
     nombre: "Tomás Ferreyra",
     rol: "Diseño de experiencia",
+    imagen: "/images/equipo/tomas-ferreyra.jpg",
   },
 ];
 
@@ -44,11 +49,15 @@ export function Equipo() {
           {equipo.map((persona) => (
             <ScrollFadeIn key={persona.nombre}>
               <div>
-                <div
-                  className="aspect-[3/4] bg-surface mb-4"
-                  role="img"
-                  aria-label={`Retrato de ${persona.nombre}`}
-                />
+                <div className="aspect-[3/4] relative overflow-hidden bg-surface mb-4">
+                  <Image
+                    src={persona.imagen}
+                    alt={`Retrato de ${persona.nombre}`}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
+                    className="object-cover"
+                  />
+                </div>
                 <p className="font-sans text-sm font-medium text-text">
                   {persona.nombre}
                 </p>
