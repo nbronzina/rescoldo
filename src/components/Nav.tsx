@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { WeatherWidget } from "./WeatherWidget";
 
 export function Nav() {
   const [visible, setVisible] = useState(true);
@@ -47,7 +46,7 @@ export function Nav() {
           Rescoldo
         </Link>
 
-        {/* Desktop links + weather */}
+        {/* Desktop links */}
         <div className="hidden md:flex items-center gap-8">
           {links.map((link) => (
             <Link
@@ -58,7 +57,6 @@ export function Nav() {
               {link.label}
             </Link>
           ))}
-          <WeatherWidget />
         </div>
 
         {/* Mobile hamburger */}
