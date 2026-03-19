@@ -18,16 +18,16 @@ const territorios = [
   {
     nombre: "El Río",
     ubicacion: "Delta del Paraná",
-    proveedor: "Ramona Giménez",
+    proveedor: "Pilar Iraola",
     descripcion:
       "Juncos, verdolaga, miel de isla. Lo que crece entre los arroyos del delta bajo, a dos horas de lancha desde Tigre.",
   },
   {
     nombre: "La Costa",
     ubicacion: "Bahía Samborombón",
-    proveedor: "Cooperativa de pescadores artesanales",
+    proveedor: "Ramona Calderón",
     descripcion:
-      "Corvina rubia, pejerrey de mar, cangrejos. Pesca artesanal de estero y costa abierta.",
+      "Corvina rubia, pescadilla, cangrejo azul. Pesca artesanal a 170 km al sureste de Buenos Aires.",
   },
   {
     nombre: "La Reserva",

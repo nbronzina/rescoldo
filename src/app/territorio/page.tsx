@@ -26,20 +26,20 @@ const territorios = [
     ubicacion: "Delta del Paraná",
     coordenadas: "-34.3500, -58.5833",
     distancia: "50 km al norte",
-    proveedor: "Ramona Giménez, pescadora e isleña",
+    proveedor: "Pilar Iraola, bióloga y especialista en humedales",
     ingredientes: "Juncos, verdolaga, miel de isla",
     texto:
-      "Ramona vive en una casa de madera sobre pilotes en el arroyo Gambado, segunda sección de islas. Pesca, recolecta y hace miel. Conoce cada arroyo del delta bajo. Los juncos maduros los corta en abril, cuando la sal del tallo está concentrada. La verdolaga crece silvestre en los albardones. La miel viene de colmenas que puso su padre hace treinta años.",
+      "Pilar trabaja en el delta bajo desde hace quince años, estudiando los ciclos de crecida y los humedales de la segunda sección de islas. Conoce cada arroyo y cada albardón. Los juncos maduros los corta en abril, cuando la sal del tallo está concentrada. La verdolaga crece silvestre entre los sauces. La miel viene de colmenas que mantiene un isleño vecino hace treinta años.",
   },
   {
     nombre: "La Costa",
     ubicacion: "Bahía Samborombón",
     coordenadas: "-35.7500, -57.4167",
     distancia: "280 km al sudeste",
-    proveedor: "Cooperativa de pescadores artesanales",
-    ingredientes: "Corvina rubia, pejerrey de mar, cangrejos",
+    proveedor: "Ramona Calderón, pescadora artesanal",
+    ingredientes: "Corvina rubia, pescadilla, cangrejo azul",
     texto:
-      "La bahía de Samborombón es el estuario más grande del Río de la Plata. Agua salobre, fondo de barro, corrientes lentas. La cooperativa pesca con redes de enmalle y línea. La corvina rubia llega entera, en cajones con hielo, el mismo día que sale del agua. El pejerrey de mar es más chico y más graso que el de río. Los cangrejos son de estero: pequeños, dulces, difíciles.",
+      "La bahía de Samborombón es el estuario más grande del Río de la Plata. Agua salobre, fondo de barro, corrientes lentas. Ramona Calderón pesca con redes de enmalle y línea desde hace más de treinta años. La corvina rubia llega entera, en cajones con hielo, el mismo día que sale del agua. La pescadilla es más chica y más delicada. Los cangrejos azules son de estero: pequeños, dulces, difíciles.",
   },
   {
     nombre: "La Reserva",

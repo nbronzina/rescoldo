@@ -33,9 +33,9 @@ const entradas = [
   },
   {
     fecha: "8 de mayo de 2030",
-    titulo: "Ramona",
+    titulo: "Pilar",
     texto:
-      "Fuimos al Delta con Santiago a buscar juncos y miel. Ramona Giménez nos llevó en su lancha por los arroyos del bajo. Pesca corvinas y pejerreyes desde hace cuarenta años. Nos enseñó a distinguir la sal del junco maduro. Volvimos con tres cajas y las manos cortadas.",
+      "Fuimos al Delta con Santiago a buscar juncos y miel. Pilar Iraola nos llevó en su lancha por los arroyos del bajo. Conoce los humedales como nadie. Nos enseñó a distinguir la sal del junco maduro. Volvimos con tres cajas y las manos cortadas.",
   },
   {
     fecha: "28 de mayo de 2030",
