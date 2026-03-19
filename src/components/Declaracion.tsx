@@ -11,10 +11,10 @@ export function Declaracion() {
             ya existiera. Que tuviera su propia historia antes de que yo llegara.
           </p>
           <p className="font-serif text-lg leading-body text-text">
-            La casa de Lanín tenía un paraíso centenario en el patio, un horno
-            de barro entre dos columnas y una galería que miraba al sur. No
-            necesitaba nada más. Diez cubiertos. Una mesa larga. El fuego
-            siempre encendido.
+            La casa de Lanín tenía un paraíso centenario en el patio y una
+            galería que miraba al sur. Nicolás construyó el horno de barro
+            entre las columnas. No necesitaba nada más. Diez cubiertos. Una
+            mesa larga. El fuego siempre encendido.
           </p>
           <p className="font-serif text-lg leading-body text-text">
             Rescoldo no es un restaurante. Es una temporada. Tres meses de
