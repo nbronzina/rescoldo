@@ -2,6 +2,26 @@
 
 Leé este archivo completo antes de hacer cualquier cosa.
 
+## Skills activas
+
+Las siguientes guías están en docs/skills/ y deben consultarse antes de ejecutar cualquier tarea relacionada:
+
+- rescoldo-voice.md → voz de Julián Arce, personajes, proveedores, platos del menú, universo diegético
+- rescoldo-web.md → tokens CSS, arquitectura web, mecanismos diegéticos, referentes de diseño
+- diegetic-fiction-web.md → principios diegéticos, tabla de decisiones, qué no hacer en una web de ficción
+- editorial-layout.md → specs del libro PDF (220×290mm), tipografía, estado de artboards, ritmo editorial
+- nano-banana-brief.md → templates de prompts visuales por categoría (plato, espacio, retrato, paisaje, textura)
+- fotoperiodismo.md → criterios documentales, checklist de evaluación de imagen, decisión editorial de página
+- anti-slop.md → escritura sin slop + microcopy UI específico de Rescoldo + reglas de diseño antislop
+- redzepi-journal.md → modelo editorial Phaidon/Pentagram para /temporada en la web y Cap. III del PDF
+
+### Reglas de aplicación
+
+- No inventar contenido que no esté en las skills
+- Si hay contradicción entre una skill y el brief del momento, el brief del momento tiene precedencia
+- rescoldo-voice + rescoldo-web se leen juntas para cualquier tarea que involucre texto en la web
+- anti-slop aplica a TODO texto visible: botones, placeholders, mensajes de error, textos de sección, footers
+
 ## Roles
 
 | Rol | Quién |
@@ -36,26 +56,19 @@ Lo que comparten: tokens de color, tipografía (DM Sans + serif), fotografía do
 
 El brief completo está en `docs/rescoldo-web-brief-v1.md`. Leerlo antes de empezar cualquier sprint.
 
-## Skills — instalar antes de empezar
+## Skills — referencia
 
-Las skills deben estar activas en TODO momento durante el desarrollo. Antes de cada tarea, verificar que están cargadas. Si una sesión se reinicia, reinstalar antes de continuar.
-
-```
-rescoldo-voice
-rescoldo-web
-diegetic-fiction-web
-editorial-layout
-nano-banana-brief
-fotoperiodismo
-```
-
-Skills de Claude Code a activar:
+Las skills están en `docs/skills/` y se cargan automáticamente a través de la sección "Skills activas" al inicio de este archivo. No requieren instalación manual.
 
 ```
-/frontend-design     ← activar primero
-/ui-ux-pro-max
-/web-design-guidelines   ← activar en auditoría pre-deploy
-/gstack              ← activar para QA
+docs/skills/rescoldo-voice.md
+docs/skills/rescoldo-web.md
+docs/skills/diegetic-fiction-web.md
+docs/skills/editorial-layout.md
+docs/skills/nano-banana-brief.md
+docs/skills/fotoperiodismo.md
+docs/skills/anti-slop.md
+docs/skills/redzepi-journal.md
 ```
 
 ## Stack
