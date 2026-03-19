@@ -6,7 +6,7 @@ const territorios = [
     nombre: "El Monte",
     ubicacion: "Santiago del Estero",
     proveedor: "Raúl Cálderes",
-    imagen: "/images/territorios/el-monte.jpg",
+    imagen: "/images/territorios/el-monte.webp",
     alt: "Raúl Cálderes moliendo algarroba",
     descripcion:
       "Algarroba, chañar, mistol. Los frutos del bosque seco que llegan en bolsas de arpillera desde Fernández.",
@@ -15,7 +15,7 @@ const territorios = [
     nombre: "El Bosque",
     ubicacion: "Esquel, Chubut",
     proveedor: "Santiago Orbe, biólogo — CIEFAP",
-    imagen: "/images/territorios/el-bosque.jpg",
+    imagen: "/images/territorios/el-bosque.webp",
     alt: "Santiago Orbe buscando hongos en el bosque de lenga",
     descripcion:
       "Morillas silvestres, llao llao, hongos de lenga. Recolección de altura entre los 800 y los 1400 metros.",
@@ -24,7 +24,7 @@ const territorios = [
     nombre: "El Río",
     ubicacion: "Delta del Paraná",
     proveedor: "Pilar Iraola",
-    imagen: "/images/territorios/el-rio.jpg",
+    imagen: "/images/territorios/el-rio.webp",
     alt: "Pilar Iraola en la lancha por los arroyos del Delta",
     descripcion:
       "Juncos, verdolaga, miel de isla. Lo que crece entre los arroyos del delta bajo, a dos horas de lancha desde Tigre.",
@@ -33,7 +33,7 @@ const territorios = [
     nombre: "La Costa",
     ubicacion: "Bahía Samborombón",
     proveedor: "Ramona Calderón",
-    imagen: "/images/territorios/la-costa.jpg",
+    imagen: "/images/territorios/la-costa.webp",
     alt: "Ramona Calderón pescando de noche en Bahía Samborombón",
     descripcion:
       "Corvina rubia, pescadilla, cangrejo azul. Pesca artesanal a 170 km al sureste de Buenos Aires.",
@@ -42,7 +42,7 @@ const territorios = [
     nombre: "La Reserva",
     ubicacion: "Costanera Sur, Buenos Aires",
     proveedor: "Recolección propia",
-    imagen: "/images/territorios/la-reserva.jpg",
+    imagen: "/images/territorios/la-reserva.webp",
     alt: "La Reserva Ecológica con cortaderas",
     descripcion:
       "Cortaderas, carqueja, aguaribay. Lo silvestre que crece a veinte minutos de la casa, dentro de la ciudad.",

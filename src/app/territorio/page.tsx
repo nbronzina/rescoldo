@@ -9,7 +9,7 @@ const territorios = [
     distancia: "1.080 km al noroeste",
     proveedor: "Raúl Cálderes, recolector",
     ingredientes: "Algarroba, chañar, mistol",
-    imagen: "/images/territorios/el-monte.jpg",
+    imagen: "/images/territorios/el-monte.webp",
     alt: "Raúl Cálderes moliendo algarroba",
     texto:
       "El monte seco santiagueño produce frutos que nadie más busca. Raúl Cálderes recolecta algarroba y chañar desde hace cincuenta años en las afueras de Fernández. Muele la algarroba en un mortero de quebracho que heredó de su madre. El arrope de chañar lo hace en una olla de hierro sobre fuego de leña. Nos manda dos envíos por temporada. Cada bolsa de arpillera llega con un papel donde anota el día de recolección y el estado del monte.",
@@ -21,7 +21,7 @@ const territorios = [
     distancia: "1.840 km al sudoeste",
     proveedor: "Santiago Orbe, biólogo — CIEFAP",
     ingredientes: "Morillas, llao llao, hongos de lenga",
-    imagen: "/images/territorios/el-bosque.jpg",
+    imagen: "/images/territorios/el-bosque.webp",
     alt: "Santiago Orbe buscando hongos en el bosque de lenga",
     texto:
       "Entre los 800 y los 1.400 metros de altura, en los bosques de lenga y coihue de la cordillera chubutense, crecen las morillas y el llao llao. Santiago Orbe trabaja en el CIEFAP y recolecta en temporada, secando lo que no se consume fresco. Las morillas llegan deshidratadas en frascos de vidrio. El llao llao viaja fresco, envuelto en hojas de nalca, y hay que usarlo en los tres días siguientes.",
@@ -33,7 +33,7 @@ const territorios = [
     distancia: "50 km al norte",
     proveedor: "Pilar Iraola, bióloga y especialista en humedales",
     ingredientes: "Juncos, verdolaga, miel de isla",
-    imagen: "/images/territorios/el-rio.jpg",
+    imagen: "/images/territorios/el-rio.webp",
     alt: "Pilar Iraola en la lancha por los arroyos del Delta",
     texto:
       "Pilar trabaja en el delta bajo desde hace quince años, estudiando los ciclos de crecida y los humedales de la segunda sección de islas. Conoce cada arroyo y cada albardón. Los juncos maduros los corta en abril, cuando la sal del tallo está concentrada. La verdolaga crece silvestre entre los sauces. La miel viene de colmenas que mantiene un isleño vecino hace treinta años.",
@@ -45,7 +45,7 @@ const territorios = [
     distancia: "170 km al sureste",
     proveedor: "Ramona Calderón, pescadora artesanal",
     ingredientes: "Corvina rubia, pescadilla, cangrejo azul",
-    imagen: "/images/territorios/la-costa.jpg",
+    imagen: "/images/territorios/la-costa.webp",
     alt: "Ramona Calderón pescando de noche en Bahía Samborombón",
     texto:
       "La bahía de Samborombón es el estuario más grande del Río de la Plata. Agua salobre, fondo de barro, corrientes lentas. Ramona Calderón pesca con redes de enmalle y línea desde hace más de treinta años. La corvina rubia llega entera, en cajones con hielo, el mismo día que sale del agua. La pescadilla es más chica y más delicada. Los cangrejos azules son de estero: pequeños, dulces, difíciles.",
@@ -57,7 +57,7 @@ const territorios = [
     distancia: "6 km al noreste",
     proveedor: "Recolección propia",
     ingredientes: "Cortaderas, carqueja, aguaribay",
-    imagen: "/images/territorios/la-reserva.jpg",
+    imagen: "/images/territorios/la-reserva.webp",
     alt: "La Reserva Ecológica con cortaderas",
     texto:
       "La Reserva Ecológica de Costanera Sur está a veinte minutos de la casa. Trescientas cincuenta hectáreas de naturaleza recuperada en lo que fue un relleno costero. Vamos a pie. En los bordes del camino de acceso y los terraplenes del Belgrano Sur juntamos cortaderas, carqueja y aguaribay. Todo crece sin intervención, a la vista de los edificios de Puerto Madero.",
