@@ -30,18 +30,26 @@ export function HeroParallax() {
           placeholder="blur"
           blurDataURL="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAb/xAAmEAACAQMDAgcBAAAAAAAAAAABAgMEESEABTESEwYiM0FRYYGx/8QAFAEBAAAAAAAAAAAAAAAAAAAABf/EABkRAAIDAQAAAAAAAAAAAAAAAAABAgMhIv/aAAwDAQACEQMRAD8Aity3XbKdZKecy1NaWHclCYYHAbnBtfHAP1pCHc5UWSKvWKNx1LGqGyA8AZ4Goyqr4IZZ4pKVpW6ulnaTJsce2Lf3Rl8SVEahB3LL5fU+PzRSozBF2Ri+j//Z"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-surface/20 to-bg/60" />
       </motion.div>
+
+      {/* Overlay for text legibility */}
+      <div
+        className="absolute inset-0 z-[1]"
+        style={{
+          background:
+            "linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.45) 40%, rgba(0,0,0,0.35) 100%)",
+        }}
+      />
 
       {/* Text overlay */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full">
-        <h1 className="font-serif text-hero font-light tracking-tight text-text">
+        <h1 className="font-serif text-hero font-light tracking-tight text-bg">
           Rescoldo
         </h1>
-        <p className="font-sans text-sm tracking-[0.25em] uppercase text-secondary mt-6">
+        <p className="font-sans text-sm tracking-[0.25em] uppercase text-bg/80 mt-6">
           Barracas, Buenos Aires
         </p>
-        <p className="font-sans text-sm tracking-[0.25em] uppercase text-secondary mt-1">
+        <p className="font-sans text-sm tracking-[0.25em] uppercase text-bg/80 mt-1">
           Otoño 2030
         </p>
       </div>
