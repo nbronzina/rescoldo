@@ -5,7 +5,7 @@ const equipo = [
   {
     nombre: "Victoria Nabel",
     rol: "Cerámica y diseño de imagen",
-    imagen: "/images/equipo/victoria-nabel.webp",
+    imagen: "/images/equipo/victoria-nabel1.webp",
   },
   {
     nombre: "Nicolás Sardi",

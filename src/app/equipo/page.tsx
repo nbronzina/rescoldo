@@ -23,7 +23,7 @@ const equipo = [
   {
     nombre: "Victoria Nabel",
     rol: "Cerámica y diseño de imagen",
-    imagen: "/images/equipo/victoria-nabel.webp",
+    imagen: "/images/equipo/victoria-nabel2.webp",
     bio: "Hace toda la vajilla de Rescoldo a mano en su taller de Villa del Parque. Gres, porcelana, esmaltes propios. También diseña la identidad visual del proyecto: la tipografía, los menús impresos, este sitio.",
   },
   {
