@@ -52,8 +52,11 @@ export function Territorios() {
           {territorios.map((t) => (
             <ScrollFadeIn key={t.nombre}>
               <div>
-                {/* Placeholder for territory photo */}
-                <div className="aspect-[4/3] bg-surface mb-6" />
+                <div
+                  className="aspect-[4/3] bg-surface mb-6"
+                  role="img"
+                  aria-label={`Fotografía de ${t.nombre}, ${t.ubicacion}`}
+                />
                 <p className="font-sans text-sm tracking-widest uppercase text-text mb-1">
                   {t.nombre}
                 </p>

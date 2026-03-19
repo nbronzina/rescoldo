@@ -1,0 +1,22 @@
+import { ScrollFadeIn } from "./ScrollFadeIn";
+
+export function Vino() {
+  return (
+    <section className="px-page py-16">
+      <ScrollFadeIn>
+        <div className="max-w-measure mx-auto">
+          <p className="font-sans text-sm tracking-widest uppercase text-secondary mb-4">
+            El vino
+          </p>
+          <p className="font-serif text-base leading-body text-text mb-2">
+            Rubén Quiroga, Alto Valle del Río Negro. Malbec y Cabernet Franc.
+            Sin sulfitos agregados, levaduras espontáneas.
+          </p>
+          <p className="font-mono text-xs text-muted">
+            Incluido en el menú de degustación · servicio a cargo de Lara Espina
+          </p>
+        </div>
+      </ScrollFadeIn>
+    </section>
+  );
+}

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen flex items-center justify-center px-page">
+    <section className="min-h-screen flex items-center justify-center px-page">
       <div className="max-w-measure text-center">
         <p className="font-serif text-xl text-text leading-body mb-6">
           Esta sección de la temporada está cerrada.
@@ -15,11 +15,11 @@ export default function NotFound() {
         </p>
         <Link
           href="/"
-          className="font-sans text-sm text-accent hover:text-text transition-colors"
+          className="font-sans text-sm text-accent hover:text-text"
         >
           &larr; Volver al journal
         </Link>
       </div>
-    </div>
+    </section>
   );
 }

@@ -73,8 +73,8 @@ export function WeatherWidget() {
   if (!weather) return null;
 
   return (
-    <div className="fixed top-20 right-0 z-40 px-page">
-      <p className="font-mono text-xs text-muted">{weather}</p>
+    <div className="fixed top-20 right-0 z-40 px-page hidden md:block">
+      <p className="font-mono text-xs text-muted text-right">{weather}</p>
     </div>
   );
 }

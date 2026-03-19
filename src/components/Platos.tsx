@@ -73,9 +73,12 @@ export function Platos() {
                   i % 2 === 1 ? "md:flex-row-reverse" : ""
                 }`}
               >
-                {/* Placeholder for plate photo */}
                 <div className="md:w-1/2 mb-8 md:mb-0">
-                  <div className="aspect-[3/2] bg-surface" />
+                  <div
+                    className="aspect-[3/2] bg-surface"
+                    role="img"
+                    aria-label={`${plato.tipo}: ${plato.nombre}`}
+                  />
                 </div>
 
                 <div className="md:w-1/2">

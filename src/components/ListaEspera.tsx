@@ -35,11 +35,12 @@ export function ListaEspera() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="tu@email.com"
               required
+              aria-label="Email para lista de espera"
               className="flex-1 px-4 py-3 bg-surface border border-surface text-text font-sans text-sm rounded-none focus:outline-none focus:border-accent placeholder:text-muted"
             />
             <button
               type="submit"
-              className="px-6 py-3 bg-text text-bg font-sans text-sm hover:bg-accent transition-colors"
+              className="px-6 py-3 bg-text text-bg font-sans text-sm hover:bg-accent"
             >
               Anotarme
             </button>

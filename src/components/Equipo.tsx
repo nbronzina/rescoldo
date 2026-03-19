@@ -44,8 +44,11 @@ export function Equipo() {
           {equipo.map((persona) => (
             <ScrollFadeIn key={persona.nombre}>
               <div>
-                {/* Placeholder for portrait photo */}
-                <div className="aspect-[3/4] bg-surface mb-4" />
+                <div
+                  className="aspect-[3/4] bg-surface mb-4"
+                  role="img"
+                  aria-label={`Retrato de ${persona.nombre}`}
+                />
                 <p className="font-sans text-sm font-medium text-text">
                   {persona.nombre}
                 </p>

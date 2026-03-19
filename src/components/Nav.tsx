@@ -34,8 +34,8 @@ export function Nav() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 bg-bg/95 backdrop-blur-sm transition-transform duration-300 ${
-        visible ? "translate-y-0" : "-translate-y-full"
+      className={`fixed top-0 left-0 right-0 z-50 bg-bg/95 backdrop-blur-sm ${
+        visible ? "" : "-translate-y-full"
       }`}
     >
       <div className="max-w-page mx-auto px-page flex items-center justify-between h-16">
@@ -52,7 +52,7 @@ export function Nav() {
             <Link
               key={link.href}
               href={link.href}
-              className="font-sans text-sm text-secondary hover:text-text transition-colors"
+              className="font-sans text-sm text-secondary hover:text-text"
             >
               {link.label}
             </Link>
@@ -95,7 +95,7 @@ export function Nav() {
             <Link
               key={link.href}
               href={link.href}
-              className="block py-2 font-sans text-sm text-secondary hover:text-text transition-colors"
+              className="block py-2 font-sans text-sm text-secondary hover:text-text"
               onClick={() => setMenuOpen(false)}
             >
               {link.label}

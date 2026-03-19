@@ -81,9 +81,12 @@ export default function Territorio() {
                   i % 2 === 1 ? "md:flex-row-reverse" : ""
                 }`}
               >
-                {/* Placeholder for territory photo */}
                 <div className="md:w-1/2 mb-8 md:mb-0">
-                  <div className="aspect-[4/3] bg-surface" />
+                  <div
+                    className="aspect-[4/3] bg-surface"
+                    role="img"
+                    aria-label={`Fotografía de ${t.nombre}, ${t.ubicacion}`}
+                  />
                 </div>
 
                 <div className="md:w-1/2">
