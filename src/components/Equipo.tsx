@@ -10,7 +10,7 @@ const equipo = [
   {
     nombre: "Nicolás Sardi",
     rol: "Construcción del espacio",
-    imagen: "/images/equipo/nicolas-sardi.webp",
+    imagen: "/images/equipo/nicolas-sardi1.jpeg",
   },
   {
     nombre: "Inés Villanueva",
