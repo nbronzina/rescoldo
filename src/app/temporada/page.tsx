@@ -129,8 +129,8 @@ export default function Temporada() {
                 </div>
               )}
 
-              {/* Separador normal (no en prólogos) */}
-              {!isPrologo && (
+              {/* Separador normal (no en prólogos, ni justo después del prólogo) */}
+              {!isPrologo && i > 0 && !entradas[i - 1].prologo && (
                 <div
                   className="h-px bg-surface mb-20"
                   aria-hidden="true"
