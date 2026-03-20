@@ -29,7 +29,7 @@ const equipo = [
   {
     nombre: "Nicolás Sardi",
     rol: "Construcción del espacio",
-    imagen: "/images/equipo/nicolas-sardi.webp",
+    imagen: "/images/equipo/nicolas-sardi2.webp",
     bio: "Construyó el horno de barro entre las columnas de la galería, trabajó la mesa con madera de demolición del Delta, restauró el piso de la casa. Trabaja con materiales de demolición y técnicas de construcción tradicional.",
   },
   {
