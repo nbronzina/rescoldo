@@ -8,7 +8,7 @@ const platos = [
     nombre: "Cortadera frita, carqueja, aguaribay",
     imagen: "/images/platos/01-bocado.jpg",
     descripcion:
-      "Lo primero que llega a la mesa viene de la Reserva Ecológica. Cortadera frita hasta que cruje, polvo de carqueja, aceite de aguaribay. Un bocado que sabe a orilla.",
+      "Cortadera frita en sartén de hierro sobre las brasas del horno. Polvo de carqueja seca, aceite de aguaribay en maceración. Un bocado que sabe a orilla.",
   },
   {
     numero: 2,
@@ -16,7 +16,7 @@ const platos = [
     nombre: "Corvina curada, sal de junco, limón de quinta, aceite de peperina",
     imagen: "/images/platos/02-entrada-fria.jpg",
     descripcion:
-      "Corvina rubia de Samborombón curada veinte minutos en sal de junco del Delta. Limón de una quinta abandonada del Delta. Peperina seca de Traslasierra.",
+      "Corvina rubia de Samborombón curada veinte minutos en sal de junco del Delta. Limón de una quinta abandonada del Delta. Aceite de peperina de Traslasierra. Sin fuego. Sin cocción.",
   },
   {
     numero: 3,
@@ -24,7 +24,7 @@ const platos = [
     nombre: "Morilla rellena de miso de poroto pallar, caldo de huesos",
     imagen: "/images/platos/03-entrada-caliente.jpg",
     descripcion:
-      "Morillas de Esquel rellenas con miso que fermentamos en casa con poroto pallar del noroeste. Caldo largo de huesos de vaca, reducido tres días.",
+      "Morillas de Esquel rellenas con miso que fermentamos en casa con poroto pallar del noroeste. Caldo de huesos de vaca reducido seis horas en el horno de barro.",
   },
   {
     numero: 4,
@@ -32,7 +32,7 @@ const platos = [
     nombre: "Zapallo plomo en rescoldo, arrope de chañar, manteca de hierbas",
     imagen: "/images/platos/04-principal.jpg",
     descripcion:
-      "El zapallo entra entero al rescoldo del horno de barro y sale cuatro horas después. Arrope de chañar de Santiago del Estero. Manteca batida con hierbas del patio.",
+      "El zapallo entra entero a las cuatro de la tarde, enterrado en las cenizas calientes del horno. Sale cuatro horas después. Arrope de chañar de Raúl. Manteca batida con hierbas del patio.",
   },
   {
     numero: 5,
@@ -40,7 +40,7 @@ const platos = [
     nombre: "Entraña a la brasa, koji de maíz colorado, verdolaga",
     imagen: "/images/platos/05-acompanamiento.jpg",
     descripcion:
-      "Entraña sobre las brasas del horno, koji que cultivamos con maíz colorado del norte, verdolaga fresca del Delta. El plato más directo de la mesa.",
+      "Entraña sobre brasas corridas afuera del horno. Koji que cultivamos con maíz colorado del norte. Verdolaga fresca del Delta. El plato más directo de la mesa.",
   },
   {
     numero: 6,
@@ -48,7 +48,7 @@ const platos = [
     nombre: "Pan de algarroba con trigo, miel de isla, manteca",
     imagen: "/images/platos/06-quiebre-dulce.jpg",
     descripcion:
-      "Pan que hacemos cada mañana con harina de algarroba de Raúl Cálderes y trigo orgánico. Miel silvestre de las islas del Delta. Manteca de campo.",
+      "Pan que entra al horno a las seis de la mañana, cuando la temperatura está en su punto más alto. Harina de algarroba de Raúl Cálderes, trigo orgánico. Miel silvestre de las islas del Delta. Manteca de campo.",
   },
   {
     numero: 7,
@@ -56,7 +56,7 @@ const platos = [
     nombre: "Llao llao en escabeche, helado de arrope de tuna, sal de río",
     imagen: "/images/platos/07-postre.jpg",
     descripcion:
-      "Llao llao del bosque de lenga en escabeche suave. Helado de arrope de tuna del monte. Escamas de sal del Paraná. El último plato cierra el mapa.",
+      "Llao llao del bosque de lenga en escabeche suave — fermentado en el lavadero. Helado de arrope de tuna del monte. Escamas de sal del Paraná. El último plato cierra el mapa.",
   },
 ];
 
