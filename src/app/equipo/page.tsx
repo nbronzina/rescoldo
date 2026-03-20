@@ -6,7 +6,7 @@ const equipo = [
     nombre: "Julián Arce",
     rol: "Cocina",
     imagen: "/images/equipo/julian-arce.webp",
-    bio: "Treinta y cuatro años. Cuatro años en el equipo de fermentación de Noma Copenhagen. Volvió a Buenos Aires en 2029 con la idea de cocinar en un lugar que ya existiera. Encontró la casa de Lanín un jueves de diciembre.",
+    bio: "Treinta y cuatro años. Cuatro años en el equipo interno de fermentación de Noma Copenhagen — no en cocina principal. Volvió a Buenos Aires en 2029 con la idea de cocinar en un lugar que ya existiera. Encontró la casa de Lanín un jueves de diciembre.",
   },
   {
     nombre: "Lara Espina",
@@ -33,16 +33,16 @@ const equipo = [
     bio: "Construyó el horno de barro entre las columnas de la galería, trabajó la mesa con madera de demolición del Delta, restauró el piso de la casa. Trabaja con materiales de demolición y técnicas de construcción tradicional.",
   },
   {
-    nombre: "Mara Villanueva",
-    rol: "Diseño del servicio",
-    imagen: "/images/equipo/mara-villanueva.webp",
+    nombre: "Inés Villanueva",
+    rol: "Coreografía del servicio",
+    imagen: "/images/equipo/ines-villanueva.webp",
     bio: "Ex-escenógrafa del Teatro San Martín. Diseñó la secuencia del servicio como si fuera una obra: la entrada por el zaguán, el recorrido al patio, el ritmo de los platos, la iluminación con velas.",
   },
   {
     nombre: "Tomás Ferreyra",
-    rol: "Diseño de experiencia",
+    rol: "Diseño sensorial",
     imagen: "/images/equipo/tomas-ferreyra.webp",
-    bio: "Arquitecto inconcluso. Diseñó las sillas, la disposición del espacio, la secuencia de movimientos. Todo lo que el cuerpo toca durante las tres horas del servicio pasó por las manos de Tomás.",
+    bio: "Arquitecto inconcluso. Diseñó el zaguán como primer plato: el comensal entra, ve el patio al fondo a través del corredor, huele el horno antes de ver nada. Todo lo que el cuerpo percibe durante las tres horas del servicio pasó por Tomás.",
   },
 ];
 

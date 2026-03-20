@@ -33,7 +33,7 @@ export function Footer() {
               <p><span className="text-secondary">Fermentación: </span><span className="text-text">Santiago Orbe</span></p>
               <p><span className="text-secondary">Cerámica y diseño: </span><span className="text-text">Victoria Nabel</span></p>
               <p><span className="text-secondary">Servicio: </span><span className="text-text">Lara Espina</span></p>
-              <p><span className="text-secondary">Espacio: </span><span className="text-text">Nicolás Sardi, Mara Villanueva, Tomás Ferreyra</span></p>
+              <p><span className="text-secondary">Espacio: </span><span className="text-text">Nicolás Sardi, Inés Villanueva, Tomás Ferreyra</span></p>
               <p><span className="text-secondary">Fotografía: </span><span className="text-text">Sebastián Ríos</span></p>
             </div>
 

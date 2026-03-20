@@ -13,13 +13,13 @@ const equipo = [
     imagen: "/images/equipo/nicolas-sardi.webp",
   },
   {
-    nombre: "Mara Villanueva",
-    rol: "Diseño del servicio",
-    imagen: "/images/equipo/mara-villanueva.webp",
+    nombre: "Inés Villanueva",
+    rol: "Coreografía del servicio",
+    imagen: "/images/equipo/ines-villanueva.webp",
   },
   {
     nombre: "Tomás Ferreyra",
-    rol: "Diseño de experiencia",
+    rol: "Diseño sensorial",
     imagen: "/images/equipo/tomas-ferreyra.webp",
   },
 ];
