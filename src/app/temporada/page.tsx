@@ -6,11 +6,13 @@ const entradas: {
   titulo: string;
   texto: string;
   imagen?: { src: string; alt: string };
+  prologo?: boolean;
 }[] = [
   {
     dia: "3",
     mes: "Agosto 2029",
     titulo: "Victoria",
+    prologo: true,
     texto:
       "Santiago la trajo un domingo. Ceramista, de Villa del Parque. Llegó a la casa cuando Nicolás todavía estaba trabajando el piso del patio. Caminó el zaguán, el patio, el galponcito del fondo. No tocó nada. Dos horas mirando. Le pregunté qué pensaba. Dijo que volvía en quince días.\n\nVolvió con tres bocetos de plato y una propuesta completa del espacio. Nadie se lo había pedido.",
   },
@@ -73,9 +75,9 @@ const entradas: {
   {
     dia: "25",
     mes: "Abril",
-    titulo: "Ramona",
+    titulo: "Rubén",
     texto:
-      "La primera vez que Ramona Calderón llegó a Lanín fue un jueves a las siete de la mañana. Venía de manejar tres horas desde la costa. Trajo dos cajones de corvina y uno de pescadilla, todos con hielo.\n\nLos dejó en la galería, tomó el café que le ofreció Lara, y se fue. No preguntó nada sobre el restaurante. No preguntó nada sobre los platos.\n\nLa semana siguiente mandó cangrejos.",
+      "Rubén Quiroga llegó desde General Fernández Oro con dos cajas de vino y sin avisar. Había hablado con Lara por teléfono en febrero, nada más. Dejó las cajas en el zaguán, abrió una botella sin preguntar y sirvió dos vasos. El Malbec tenía algo que no esperaba. No fruta, no roble. Algo más parecido a tierra después de la lluvia. Le pregunté cómo lo hacía. Dijo: sin apurarlo.\n\nQuedamos en que traía doce cajas por temporada. Que si se terminaban, se terminaban.",
   },
   {
     dia: "8",
@@ -107,61 +109,92 @@ export default function Temporada() {
           Lanín 234, Barracas
         </p>
 
-        {entradas.map((entrada, i) => (
-          <article key={entrada.dia + entrada.titulo}>
-            {/* Separador */}
-            <div
-              className="h-px bg-surface mb-20"
-              aria-hidden="true"
-            />
+        {entradas.map((entrada, i) => {
+          const isPrologo = entrada.prologo;
+          const nextIsNotPrologo =
+            i < entradas.length - 1 && !entradas[i + 1].prologo;
 
-            {/* Fecha como elemento tipográfico */}
-            <p className="font-mono text-journal-date text-muted mb-1">
-              {entrada.dia}
-            </p>
-            <p className="font-mono text-xs text-muted mb-8 tracking-wider uppercase">
-              {entrada.mes}
-            </p>
-
-            {/* Título */}
-            <h2 className="font-serif text-xl text-text mb-6">
-              {entrada.titulo}
-            </h2>
-
-            {/* Cuerpo */}
-            <div className="space-y-6">
-              {entrada.texto.split("\n\n").map((parrafo, j) => (
-                <p
-                  key={j}
-                  className="font-serif text-lg text-text leading-loose"
-                >
-                  {parrafo}
-                </p>
-              ))}
-            </div>
-
-            {/* Imagen flat lay opcional */}
-            {entrada.imagen && (
-              <div className="flex justify-center my-16">
-                <div className="w-2/5">
-                  <Image
-                    src={entrada.imagen.src}
-                    alt={entrada.imagen.alt}
-                    width={400}
-                    height={400}
-                    className="w-full h-auto"
-                    sizes="(max-width: 768px) 50vw, 260px"
+          return (
+            <article key={entrada.dia + entrada.titulo}>
+              {/* Etiqueta de prólogo */}
+              {isPrologo && i === 0 && (
+                <div className="mb-12">
+                  <p className="font-sans text-xs tracking-[0.2em] uppercase text-muted mb-4">
+                    Antes de la temporada
+                  </p>
+                  <div
+                    className="h-px bg-muted"
+                    aria-hidden="true"
                   />
                 </div>
-              </div>
-            )}
+              )}
 
-            {/* Espacio generoso entre entradas */}
-            {i < entradas.length - 1 && (
-              <div className="h-20" aria-hidden="true" />
-            )}
-          </article>
-        ))}
+              {/* Separador normal (no en prólogos) */}
+              {!isPrologo && (
+                <div
+                  className="h-px bg-surface mb-20"
+                  aria-hidden="true"
+                />
+              )}
+
+              {/* Fecha como elemento tipográfico */}
+              <p className={`font-mono text-journal-date mb-1 ${isPrologo ? "text-secondary" : "text-muted"}`}>
+                {entrada.dia}
+              </p>
+              <p className={`font-mono text-xs mb-8 tracking-wider uppercase ${isPrologo ? "text-secondary" : "text-muted"}`}>
+                {entrada.mes}
+              </p>
+
+              {/* Título */}
+              <h2 className={`font-serif text-xl mb-6 ${isPrologo ? "text-secondary" : "text-text"}`}>
+                {entrada.titulo}
+              </h2>
+
+              {/* Cuerpo */}
+              <div className="space-y-6">
+                {entrada.texto.split("\n\n").map((parrafo, j) => (
+                  <p
+                    key={j}
+                    className={`font-serif text-lg leading-loose ${isPrologo ? "text-muted" : "text-text"}`}
+                  >
+                    {parrafo}
+                  </p>
+                ))}
+              </div>
+
+              {/* Imagen flat lay opcional */}
+              {entrada.imagen && (
+                <div className="flex justify-center my-16">
+                  <div className="w-2/5">
+                    <Image
+                      src={entrada.imagen.src}
+                      alt={entrada.imagen.alt}
+                      width={400}
+                      height={400}
+                      className="w-full h-auto"
+                      sizes="(max-width: 768px) 50vw, 260px"
+                    />
+                  </div>
+                </div>
+              )}
+
+              {/* Línea divisoria después del prólogo */}
+              {isPrologo && nextIsNotPrologo && (
+                <div className="mt-20 mb-20">
+                  <div
+                    className="h-px bg-muted"
+                    aria-hidden="true"
+                  />
+                </div>
+              )}
+
+              {/* Espacio generoso entre entradas */}
+              {i < entradas.length - 1 && !isPrologo && (
+                <div className="h-20" aria-hidden="true" />
+              )}
+            </article>
+          );
+        })}
 
         {/* Separador final */}
         <div className="h-px bg-surface mt-20" aria-hidden="true" />
