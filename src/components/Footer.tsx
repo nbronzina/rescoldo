@@ -45,7 +45,7 @@ export function Footer() {
 
             {/* Disclaimer */}
             <div className="border-t border-surface pt-8">
-              <p className="text-xs text-muted leading-relaxed max-w-measure">
+              <p className="text-sm text-muted leading-relaxed max-w-measure">
                 Este es un proyecto de ficción que explora el futuro posible de la
                 gastronomía de Buenos Aires. Un proyecto de{" "}
                 <a
