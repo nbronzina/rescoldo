@@ -47,6 +47,7 @@ const platos = [
     tipo: "Quiebre dulce",
     nombre: "Pan de algarroba con trigo, miel de isla, manteca",
     imagen: "/images/platos/06-quiebre-dulce.jpg",
+    objectPosition: "center 40%",
     descripcion:
       "Pan que entra al horno a las seis de la mañana, cuando la temperatura está en su punto más alto. Harina de algarroba de Raúl Cálderes, trigo orgánico. Miel silvestre de las islas del Delta. Manteca de campo.",
   },
@@ -90,6 +91,7 @@ export function Platos() {
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover"
+                      style={plato.objectPosition ? { objectPosition: plato.objectPosition } : undefined}
                     />
                   </div>
                 </div>
