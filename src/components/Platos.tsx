@@ -6,7 +6,7 @@ const platos = [
     numero: 1,
     tipo: "Bocado",
     nombre: "Cortadera frita, carqueja, aguaribay",
-    imagen: "/images/platos/01-bocado.jpg",
+    imagen: "/images/platos/1.jpeg",
     descripcion:
       "Cortadera frita en sartén de hierro sobre las brasas del horno. Polvo de carqueja seca, aceite de aguaribay en maceración. Un bocado que sabe a orilla.",
   },
@@ -14,7 +14,7 @@ const platos = [
     numero: 2,
     tipo: "Entrada fría",
     nombre: "Corvina curada, sal de junco, limón de quinta, aceite de peperina",
-    imagen: "/images/platos/02-entrada-fria.jpg",
+    imagen: "/images/platos/2.jpeg",
     descripcion:
       "Corvina rubia de Samborombón curada veinte minutos en sal de junco del Delta. Limón de una quinta abandonada del Delta. Aceite de peperina de Traslasierra. Sin fuego. Sin cocción.",
   },
