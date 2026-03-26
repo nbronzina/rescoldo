@@ -70,7 +70,7 @@ export function Platos() {
             Los platos
           </p>
           <p className="font-mono text-sm text-muted mb-16">
-            Menú de degustación — $185.000 por persona · vinos a elección
+            Menú de degustación — $420.000 por persona · vinos a elección
           </p>
         </ScrollFadeIn>
 

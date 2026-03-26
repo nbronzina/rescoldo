@@ -9,7 +9,7 @@ export function Vino() {
             El vino
           </p>
           <p className="font-serif text-base leading-body text-text mb-2">
-            Rubén Quiroga, Alto Valle del Río Negro. Malbec y Cabernet Franc.
+            Rubén Quiroga · Bodega Las Bardas, Alto Valle del Río Negro. Malbec y Cabernet Franc de secano.
             Sin sulfitos agregados, levaduras espontáneas.
           </p>
           <p className="font-mono text-xs text-muted">

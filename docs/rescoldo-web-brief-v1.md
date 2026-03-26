@@ -53,7 +53,7 @@ La web no es la web sobre el restaurante. La web es el journal de la temporada e
 6. Quiebre dulce — Pan de algarroba con trigo, miel de isla, manteca
 7. Postre — Llao llao en escabeche, helado de arrope de tuna, sal de río
 
-**El vino:** Rubén Quiroga, Alto Valle del Río Negro. Malbec y Cabernet Franc. Sin sulfitos, levaduras espontáneas. Productor ficticio, región real.
+**El vino:** Rubén Quiroga · Bodega Las Bardas, Alto Valle del Río Negro. Malbec y Cabernet Franc de secano. Sin sulfitos, levaduras espontáneas. Productor ficticio, región real.
 
 ## Sistema visual
 
@@ -209,7 +209,7 @@ Próxima apertura: otoño 2031.
 ### 5. El menú con precios
 
 ```
-Menú de degustación — $185.000 por persona · vinos a elección
+Menú de degustación — $420.000 por persona · vinos a elección
 ```
 
 Precio en pesos argentinos, plausible para 2030. Tipografía mono.
