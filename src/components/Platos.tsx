@@ -41,6 +41,8 @@ const platos: Plato[] = [
     numero: 4,
     tipo: "Principal",
     nombre: "Zapallo plomo en rescoldo, arrope de chañar, manteca de hierbas",
+    imagen: "/images/platos/4.jpeg",
+    alt: "Zapallo quemado en rescoldo, abierto, con manteca de hierbas y arrope de chañar sobre plato de gres tostado",
     descripcion:
       "El zapallo entra entero a las cuatro de la tarde, enterrado en las cenizas calientes del horno. Sale cuatro horas después. Arrope de chañar de Raúl. Manteca batida con hierbas del patio.",
   },
