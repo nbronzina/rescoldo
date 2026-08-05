@@ -1,12 +1,19 @@
 import Image from "next/image";
 import { ScrollFadeIn } from "@/components/ScrollFadeIn";
 
-const equipo = [
+type Persona = {
+  nombre: string;
+  rol: string;
+  bio: string;
+  imagen?: string;
+};
+
+const equipo: Persona[] = [
   {
     nombre: "Julián Arce",
     rol: "Cocina",
     imagen: "/images/equipo/julian-arce.webp",
-    bio: "Treinta y cuatro años. Cuatro años en el equipo interno de fermentación de Noma Copenhagen — no en cocina principal. Volvió a Buenos Aires en 2029 con la idea de cocinar en un lugar que ya existiera. Encontró la casa de Lanín un jueves de diciembre.",
+    bio: "Treinta y cuatro años. Cuatro años en el equipo interno de fermentación de Noma Copenhagen — no en cocina principal. Volvió a Buenos Aires en 2029 con la idea de cocinar en un lugar que ya existiera. Lara le mostró la casa de Lanín un jueves de junio.",
   },
   {
     nombre: "Lara Espina",
@@ -18,13 +25,13 @@ const equipo = [
     nombre: "Santiago Orbe",
     rol: "Fermentación",
     imagen: "/images/equipo/santiago-orbe.webp",
-    bio: "Ex-Noma, igual que Julián. Se especializa en fermentaciones: koji, miso, garum. En Rescoldo maneja la cámara de fermentación que armaron en lo que era el lavadero de la casa.",
+    bio: "Ex-equipo interno de fermentación de Noma, igual que Julián. Se especializa en fermentaciones: koji, miso, garum. En Rescoldo maneja la cámara de fermentación que armaron en lo que era el lavadero de la casa.",
   },
   {
     nombre: "Victoria Nabel",
     rol: "Cerámica y diseño de imagen",
     imagen: "/images/equipo/victoria-nabel2.webp",
-    bio: "Hace toda la vajilla de Rescoldo a mano en su taller de Villa del Parque. Gres, porcelana, esmaltes propios. También diseña la identidad visual del proyecto: la tipografía, los menús impresos, este sitio.",
+    bio: "Hace toda la vajilla de Rescoldo a mano en su taller de Villa del Parque. Gres, porcelana, esmaltes propios. También hizo la tipografía del menú, los impresos y este sitio.",
   },
   {
     nombre: "Nicolás Sardi",
@@ -35,13 +42,11 @@ const equipo = [
   {
     nombre: "Inés Villanueva",
     rol: "Coreografía del servicio",
-    imagen: "/images/equipo/ines-villanueva.webp",
     bio: "Ex-escenógrafa del Teatro San Martín. Diseñó la secuencia del servicio como si fuera una obra: la entrada por el zaguán, el recorrido al patio, el ritmo de los platos, la iluminación con velas.",
   },
   {
     nombre: "Tomás Ferreyra",
     rol: "Diseño sensorial",
-    imagen: "/images/equipo/tomas-ferreyra.webp",
     bio: "Arquitecto inconcluso. Diseñó el zaguán como primer plato: el comensal entra, ve el patio al fondo a través del corredor, huele el horno antes de ver nada. Todo lo que el cuerpo percibe durante las tres horas del servicio pasó por Tomás.",
   },
 ];
@@ -50,21 +55,19 @@ export default function EquipoPage() {
   return (
     <div className="pt-32 pb-16 px-page">
       <div className="max-w-page mx-auto">
-        <ScrollFadeIn>
-          <div className="max-w-measure mb-20">
-            <p className="font-sans text-sm tracking-widest uppercase text-secondary mb-4">
-              El equipo
-            </p>
-            <h1 className="font-serif text-2xl text-text mb-6">
-              Siete personas, una temporada
-            </h1>
-            <p className="font-serif text-lg leading-body text-secondary">
-              Rescoldo no es un restaurante con personal. Es un proyecto de siete
-              personas que dejaron lo que estaban haciendo para cocinar, construir
-              y servir durante tres meses en una casa de Barracas.
-            </p>
-          </div>
-        </ScrollFadeIn>
+        <div className="max-w-measure mb-20">
+          <p className="font-sans text-sm tracking-widest uppercase text-secondary mb-4">
+            El equipo
+          </p>
+          <h1 className="font-serif text-2xl text-text mb-6">
+            Siete personas, una temporada
+          </h1>
+          <p className="font-serif text-lg leading-body text-secondary">
+            Rescoldo no es un restaurante con personal. Es un proyecto de siete
+            personas que dejaron lo que estaban haciendo para cocinar, construir
+            y servir durante tres meses en una casa de Barracas.
+          </p>
+        </div>
 
         <ScrollFadeIn>
           <div className="space-y-20">
@@ -77,13 +80,15 @@ export default function EquipoPage() {
               >
                 <div className="md:w-1/3 mb-8 md:mb-0">
                   <div className="aspect-[3/4] relative overflow-hidden bg-surface">
-                    <Image
-                      src={persona.imagen}
-                      alt={`Retrato de ${persona.nombre}`}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 33vw"
-                      className="object-cover"
-                    />
+                    {persona.imagen && (
+                      <Image
+                        src={persona.imagen}
+                        alt={`Retrato de ${persona.nombre}`}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 380px"
+                        className="object-cover"
+                      />
+                    )}
                   </div>
                 </div>
 

@@ -4,9 +4,9 @@ export default function NotFound() {
   return (
     <section className="min-h-screen flex items-center justify-center px-page">
       <div className="max-w-measure text-center">
-        <p className="font-serif text-xl text-text leading-body mb-6">
+        <h1 className="font-serif text-xl text-text leading-body mb-6">
           Esta sección de la temporada está cerrada.
-        </p>
+        </h1>
         <p className="font-serif text-lg text-secondary leading-body mb-2">
           Rescoldo opera entre marzo y mayo.
         </p>

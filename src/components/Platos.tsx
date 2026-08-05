@@ -1,12 +1,23 @@
 import Image from "next/image";
 import { ScrollFadeIn } from "./ScrollFadeIn";
 
-const platos = [
+type Plato = {
+  numero: number;
+  tipo: string;
+  nombre: string;
+  descripcion: string;
+  imagen?: string;
+  alt?: string;
+  objectPosition?: string;
+};
+
+const platos: Plato[] = [
   {
     numero: 1,
     tipo: "Bocado",
     nombre: "Cortadera frita, carqueja, aguaribay",
     imagen: "/images/platos/1.jpeg",
+    alt: "Cortaderas fritas sobre plato de gres gris",
     descripcion:
       "Cortadera frita en sartén de hierro sobre las brasas del horno. Polvo de carqueja seca, aceite de aguaribay en maceración. Un bocado que sabe a orilla.",
   },
@@ -15,6 +26,7 @@ const platos = [
     tipo: "Entrada fría",
     nombre: "Corvina curada, sal de junco, limón de quinta, aceite de peperina",
     imagen: "/images/platos/2.jpeg",
+    alt: "Láminas de corvina curada sobre plato de cerámica ocre",
     descripcion:
       "Corvina rubia de Samborombón curada veinte minutos en sal de junco del Delta. Limón de una quinta abandonada del Delta. Aceite de peperina de Traslasierra. Sin fuego. Sin cocción.",
   },
@@ -22,7 +34,6 @@ const platos = [
     numero: 3,
     tipo: "Entrada caliente",
     nombre: "Morilla rellena de miso de poroto pallar, caldo de huesos",
-    imagen: "/images/platos/03-entrada-caliente.jpg",
     descripcion:
       "Morillas de Esquel rellenas con miso que fermentamos en casa con poroto pallar del noroeste. Caldo de huesos de vaca reducido seis horas en el horno de barro.",
   },
@@ -30,7 +41,6 @@ const platos = [
     numero: 4,
     tipo: "Principal",
     nombre: "Zapallo plomo en rescoldo, arrope de chañar, manteca de hierbas",
-    imagen: "/images/platos/04-principal.jpg",
     descripcion:
       "El zapallo entra entero a las cuatro de la tarde, enterrado en las cenizas calientes del horno. Sale cuatro horas después. Arrope de chañar de Raúl. Manteca batida con hierbas del patio.",
   },
@@ -38,7 +48,6 @@ const platos = [
     numero: 5,
     tipo: "Acompañamiento",
     nombre: "Entraña a la brasa, koji de maíz colorado, verdolaga",
-    imagen: "/images/platos/05-acompanamiento.jpg",
     descripcion:
       "Entraña sobre brasas corridas afuera del horno. Koji que cultivamos con maíz colorado del norte. Verdolaga fresca del Delta. El plato más directo de la mesa.",
   },
@@ -46,8 +55,6 @@ const platos = [
     numero: 6,
     tipo: "Quiebre dulce",
     nombre: "Pan de algarroba con trigo, miel de isla, manteca",
-    imagen: "/images/platos/06-quiebre-dulce.jpg",
-    objectPosition: "center 40%",
     descripcion:
       "Pan que entra al horno a las seis de la mañana, cuando la temperatura está en su punto más alto. Harina de algarroba de Raúl Cálderes, trigo orgánico. Miel silvestre de las islas del Delta. Manteca de campo.",
   },
@@ -55,7 +62,6 @@ const platos = [
     numero: 7,
     tipo: "Postre",
     nombre: "Llao llao en escabeche, helado de arrope de tuna, sal de río",
-    imagen: "/images/platos/07-postre.jpg",
     descripcion:
       "Llao llao del bosque de lenga en escabeche suave — fermentado en el lavadero. Helado de arrope de tuna del monte. Escamas de sal del Paraná. El último plato cierra el mapa.",
   },
@@ -66,10 +72,10 @@ export function Platos() {
     <section className="px-page py-24">
       <div className="max-w-page mx-auto">
         <ScrollFadeIn>
-          <p className="font-sans text-sm tracking-widest uppercase text-secondary mb-4">
+          <h2 className="font-sans text-sm tracking-widest uppercase text-secondary mb-4">
             Los platos
-          </p>
-          <p className="font-mono text-sm text-muted mb-16">
+          </h2>
+          <p className="font-mono text-sm text-secondary mb-16">
             Menú de degustación — $420.000 por persona · vinos a elección
           </p>
         </ScrollFadeIn>
@@ -85,14 +91,16 @@ export function Platos() {
               >
                 <div className="md:w-1/2 mb-8 md:mb-0">
                   <div className="aspect-[3/2] relative overflow-hidden bg-surface">
-                    <Image
-                      src={plato.imagen}
-                      alt={`${plato.tipo}: ${plato.nombre}`}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      className="object-cover"
-                      style={plato.objectPosition ? { objectPosition: plato.objectPosition } : undefined}
-                    />
+                    {plato.imagen && (
+                      <Image
+                        src={plato.imagen}
+                        alt={plato.alt ?? ""}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 600px"
+                        className="object-cover"
+                        style={plato.objectPosition ? { objectPosition: plato.objectPosition } : undefined}
+                      />
+                    )}
                   </div>
                 </div>
 

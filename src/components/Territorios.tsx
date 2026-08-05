@@ -45,7 +45,7 @@ const territorios = [
     imagen: "/images/territorios/la-reserva.webp",
     alt: "La Reserva Ecológica con cortaderas",
     descripcion:
-      "Cortaderas, carqueja, aguaribay. Lo silvestre que crece a veinte minutos de la casa, dentro de la ciudad.",
+      "Cortaderas, carqueja, aguaribay. Lo que crece en los bordes y terraplenes, a veinte minutos de la casa.",
   },
 ];
 
@@ -54,9 +54,9 @@ export function Territorios() {
     <section className="px-page py-24">
       <div className="max-w-page mx-auto">
         <ScrollFadeIn>
-          <p className="font-sans text-sm tracking-widest uppercase text-secondary mb-16">
+          <h2 className="font-sans text-sm tracking-widest uppercase text-secondary mb-16">
             El territorio
-          </p>
+          </h2>
         </ScrollFadeIn>
 
         <ScrollFadeIn>
@@ -75,7 +75,7 @@ export function Territorios() {
                     src={t.imagen}
                     alt={t.alt}
                     fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
+                    sizes="(max-width: 768px) 100vw, 600px"
                     className="object-cover"
                   />
                 </div>

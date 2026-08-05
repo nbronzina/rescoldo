@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    formats: ["image/avif", "image/webp"],
+    formats: ["image/webp"],
   },
   async headers() {
     return [
       {
-        source: "/(.*)",
+        source: "/((?!_next/).*)",
         headers: [
           {
             key: "Cache-Control",

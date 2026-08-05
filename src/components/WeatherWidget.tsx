@@ -46,7 +46,8 @@ export function WeatherWidget() {
   useEffect(() => {
     async function fetchWeather() {
       const now = new Date();
-      const dia = DIAS[now.getDay()];
+      const diegetica = new Date(2030, now.getMonth(), now.getDate());
+      const dia = DIAS[diegetica.getDay()];
       const fecha = now.getDate();
       const mes = MESES[now.getMonth()];
 
@@ -54,6 +55,7 @@ export function WeatherWidget() {
         const res = await fetch(
           "https://api.open-meteo.com/v1/forecast?latitude=-34.6677&longitude=-58.3716&current=temperature_2m,weathercode"
         );
+        if (!res.ok) throw new Error("weather");
         const data = await res.json();
         const temp = Math.round(data.current.temperature_2m);
         const code = data.current.weathercode as number;
@@ -73,7 +75,7 @@ export function WeatherWidget() {
     fetchWeather();
   }, []);
 
-  if (!weather) return null;
+  if (!weather) return <div className="h-8" aria-hidden="true" />;
 
   return (
     <div className="font-mono text-xs text-muted">

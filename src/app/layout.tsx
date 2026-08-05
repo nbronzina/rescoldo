@@ -4,9 +4,17 @@ import { Footer } from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://rescoldo.vercel.app"),
   title: "Rescoldo — Barracas, Buenos Aires · Otoño 2030",
   description:
     "Journal de la primera temporada. Una residencia gastronómica en Barracas, Buenos Aires.",
+  openGraph: {
+    title: "Rescoldo — Barracas, Buenos Aires · Otoño 2030",
+    description:
+      "Journal de la primera temporada. Una residencia gastronómica en Barracas, Buenos Aires.",
+    locale: "es_AR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

@@ -21,16 +21,25 @@ export function ListaEspera() {
         </p>
 
         {submitted ? (
-          <p className="font-serif text-base text-secondary leading-body">
+          <p
+            role="status"
+            aria-live="polite"
+            className="font-serif text-base text-secondary leading-body"
+          >
             Anotado. Te escribimos en septiembre.
           </p>
         ) : (
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <label htmlFor="email" className="sr-only">
+              Tu email
+            </label>
             <input
+              id="email"
+              name="email"
               type="email"
               required
               placeholder="tu@email.com"
-              className="w-full sm:w-64 px-4 py-3 bg-transparent border border-surface text-text font-sans text-sm placeholder:text-muted focus:outline-none focus:border-secondary"
+              className="w-full sm:w-64 px-4 py-3 bg-transparent border border-secondary text-text font-sans text-sm placeholder:text-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent"
             />
             <button
               type="submit"

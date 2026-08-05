@@ -1,7 +1,14 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ScrollFadeIn } from "./ScrollFadeIn";
 
-const equipo = [
+type Persona = {
+  nombre: string;
+  rol: string;
+  imagen?: string;
+};
+
+const equipo: Persona[] = [
   {
     nombre: "Victoria Nabel",
     rol: "Cerámica y diseño de imagen",
@@ -10,17 +17,15 @@ const equipo = [
   {
     nombre: "Nicolás Sardi",
     rol: "Construcción del espacio",
-    imagen: "/images/equipo/nicolas-sardi1.jpeg",
+    imagen: "/images/equipo/nicolas-sardi1.webp",
   },
   {
     nombre: "Inés Villanueva",
     rol: "Coreografía del servicio",
-    imagen: "/images/equipo/ines-villanueva.webp",
   },
   {
     nombre: "Tomás Ferreyra",
     rol: "Diseño sensorial",
-    imagen: "/images/equipo/tomas-ferreyra.webp",
   },
 ];
 
@@ -29,9 +34,9 @@ export function Equipo() {
     <section className="px-page py-24">
       <div className="max-w-page mx-auto">
         <ScrollFadeIn>
-          <p className="font-sans text-sm tracking-widest uppercase text-secondary mb-16">
+          <h2 className="font-sans text-sm tracking-widest uppercase text-secondary mb-16">
             El equipo
-          </p>
+          </h2>
 
           <div className="max-w-measure mb-20">
             <p className="font-serif text-lg leading-body text-text">
@@ -45,13 +50,15 @@ export function Equipo() {
             {equipo.map((persona) => (
               <div key={persona.nombre}>
                 <div className="aspect-[3/4] relative overflow-hidden bg-surface mb-4">
-                  <Image
-                    src={persona.imagen}
-                    alt={`Retrato de ${persona.nombre}`}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
-                    className="object-cover"
-                  />
+                  {persona.imagen && (
+                    <Image
+                      src={persona.imagen}
+                      alt={`Retrato de ${persona.nombre}`}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      className="object-cover"
+                    />
+                  )}
                 </div>
                 <p className="font-sans text-sm font-medium text-text">
                   {persona.nombre}
@@ -61,6 +68,15 @@ export function Equipo() {
                 </p>
               </div>
             ))}
+          </div>
+
+          <div className="mt-12">
+            <Link
+              href="/equipo"
+              className="font-sans text-sm text-accent hover:text-text"
+            >
+              El equipo completo &rarr;
+            </Link>
           </div>
         </ScrollFadeIn>
       </div>

@@ -114,8 +114,15 @@ export default function Temporada() {
           const nextIsNotPrologo =
             i < entradas.length - 1 && !entradas[i + 1].prologo;
 
+          const entradaId = `entrada-${entrada.dia}-${entrada.mes}`
+            .toLowerCase()
+            .replace(/\s+/g, "-");
+
           return (
-            <article key={entrada.dia + entrada.titulo}>
+            <article
+              key={entrada.dia + entrada.titulo}
+              aria-labelledby={entradaId}
+            >
               {/* Etiqueta de prólogo */}
               {isPrologo && i === 0 && (
                 <div className="mb-12">
@@ -146,7 +153,10 @@ export default function Temporada() {
               </p>
 
               {/* Título */}
-              <h2 className={`font-serif text-xl mb-6 ${isPrologo ? "text-secondary" : "text-text"}`}>
+              <h2
+                id={entradaId}
+                className={`font-serif text-xl mb-6 ${isPrologo ? "text-secondary" : "text-text"}`}
+              >
                 {entrada.titulo}
               </h2>
 
@@ -155,7 +165,7 @@ export default function Temporada() {
                 {entrada.texto.split("\n\n").map((parrafo, j) => (
                   <p
                     key={j}
-                    className={`font-serif text-lg leading-loose ${isPrologo ? "text-muted" : "text-text"}`}
+                    className={`font-serif text-lg leading-loose ${isPrologo ? "text-secondary" : "text-text"}`}
                   >
                     {parrafo}
                   </p>
