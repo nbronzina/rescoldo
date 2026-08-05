@@ -48,6 +48,7 @@ const equipo: Persona[] = [
   {
     nombre: "Tomás Ferreyra",
     rol: "Diseño sensorial",
+    imagen: "/images/equipo/tomas-ferreyra2.webp",
     bio: "Arquitecto inconcluso. Diseñó el zaguán como primer plato: el comensal entra, ve el patio al fondo a través del corredor, huele el horno antes de ver nada. Todo lo que el cuerpo percibe durante las tres horas del servicio pasó por Tomás.",
   },
 ];
