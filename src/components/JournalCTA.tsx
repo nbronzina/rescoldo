@@ -8,9 +8,9 @@ export function JournalCTA() {
   return (
     <section className="px-page py-32 border-t border-surface">
       <div className="max-w-measure mx-auto text-center">
-        <p className="font-sans text-sm tracking-widest uppercase text-secondary mb-4">
+        <h2 className="font-sans text-sm tracking-widest uppercase text-secondary mb-4">
           El journal
-        </p>
+        </h2>
         <p className="font-serif text-xl text-text leading-body mb-2">
           Rescoldo — Primera temporada, otoño 2030
         </p>
@@ -26,7 +26,11 @@ export function JournalCTA() {
         </button>
 
         {clicked && (
-          <p className="font-serif text-sm text-secondary mt-6">
+          <p
+            role="status"
+            aria-live="polite"
+            className="font-serif text-sm text-secondary mt-6"
+          >
             El journal estará disponible próximamente.
           </p>
         )}

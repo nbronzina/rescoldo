@@ -7,19 +7,35 @@ export function Nav() {
   const [visible, setVisible] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
   const lastScrollY = useRef(0);
+  const visibleRef = useRef(true);
 
   useEffect(() => {
-    const handleScroll = () => {
+    let ticking = false;
+
+    const update = () => {
       const currentScrollY = window.scrollY;
+      let nextVisible = visibleRef.current;
       if (currentScrollY < 10) {
-        setVisible(true);
+        nextVisible = true;
       } else if (currentScrollY > lastScrollY.current) {
-        setVisible(false);
-        setMenuOpen(false);
+        nextVisible = false;
       } else {
-        setVisible(true);
+        nextVisible = true;
+      }
+      if (nextVisible !== visibleRef.current) {
+        visibleRef.current = nextVisible;
+        setVisible(nextVisible);
+        if (!nextVisible) setMenuOpen(false);
       }
       lastScrollY.current = currentScrollY;
+      ticking = false;
+    };
+
+    const handleScroll = () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
+      }
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -34,7 +50,7 @@ export function Nav() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 bg-bg/95 backdrop-blur-sm transition-transform duration-300 ease-in-out ${
+      className={`fixed top-0 left-0 right-0 z-50 bg-bg/95 transition-transform duration-300 ease-in-out ${
         visible ? "" : "-translate-y-full"
       }`}
     >
@@ -61,9 +77,11 @@ export function Nav() {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden p-2 text-text"
+          className="md:hidden p-3 text-text"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label={menuOpen ? "Cerrar menú" : "Abrir menú"}
+          aria-expanded={menuOpen}
+          aria-controls="menu-movil"
         >
           <svg
             width="20"
@@ -90,12 +108,12 @@ export function Nav() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden border-t border-surface px-page pb-6 pt-4 bg-bg">
+        <div id="menu-movil" className="md:hidden border-t border-surface px-page pb-6 pt-4 bg-bg">
           {links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="block py-2 font-sans text-sm text-secondary hover:text-text"
+              className="block py-3 font-sans text-sm text-secondary hover:text-text"
               onClick={() => setMenuOpen(false)}
             >
               {link.label}

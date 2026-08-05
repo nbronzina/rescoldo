@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 
 export function HeroParallax() {
@@ -11,13 +11,14 @@ export function HeroParallax() {
     offset: ["start start", "end start"],
   });
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+  const reducedMotion = useReducedMotion();
 
   return (
-    <section ref={ref} className="relative h-screen overflow-hidden">
+    <section ref={ref} className="relative h-[100svh] overflow-hidden">
       {/* Background image with parallax */}
       <motion.div
         className="absolute inset-0 bg-surface"
-        style={{ y }}
+        style={reducedMotion ? {} : { y }}
       >
         <Image
           src="/images/hero/mesa-patio.jpeg"
