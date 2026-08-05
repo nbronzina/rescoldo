@@ -69,6 +69,8 @@ const platos: Plato[] = [
     numero: 7,
     tipo: "Postre",
     nombre: "Llao llao en escabeche, helado de arrope de tuna, sal de río",
+    imagen: "/images/platos/7.jpeg",
+    alt: "Cuenco de cerámica clara con bochas de helado de arrope de tuna, llao llao en escabeche y escamas de sal",
     descripcion:
       "Llao llao del bosque de lenga en escabeche suave — fermentado en el lavadero. Helado de arrope de tuna del monte. Escamas de sal del Paraná. El último plato cierra el mapa.",
   },
