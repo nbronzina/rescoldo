@@ -22,6 +22,7 @@ const equipo: Persona[] = [
   {
     nombre: "Inés Villanueva",
     rol: "Coreografía del servicio",
+    imagen: "/images/equipo/ines-villanueva1.webp",
   },
   {
     nombre: "Tomás Ferreyra",
