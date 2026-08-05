@@ -59,6 +59,9 @@ const platos: Plato[] = [
     numero: 6,
     tipo: "Quiebre dulce",
     nombre: "Pan de algarroba con trigo, miel de isla, manteca",
+    imagen: "/images/platos/6.jpeg",
+    alt: "Hogaza de pan de algarroba en rebanadas junto a un cuenco de manteca y miel de isla sobre la mesa de madera",
+    objectPosition: "center 60%",
     descripcion:
       "Pan que entra al horno a las seis de la mañana, cuando la temperatura está en su punto más alto. Harina de algarroba de Raúl Cálderes, trigo orgánico. Miel silvestre de las islas del Delta. Manteca de campo.",
   },
