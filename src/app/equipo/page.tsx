@@ -42,6 +42,7 @@ const equipo: Persona[] = [
   {
     nombre: "Inés Villanueva",
     rol: "Coreografía del servicio",
+    imagen: "/images/equipo/ines-villanueva2.webp",
     bio: "Ex-escenógrafa del Teatro San Martín. Diseñó la secuencia del servicio como si fuera una obra: la entrada por el zaguán, el recorrido al patio, el ritmo de los platos, la iluminación con velas.",
   },
   {
