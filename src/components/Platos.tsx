@@ -50,6 +50,8 @@ const platos: Plato[] = [
     numero: 5,
     tipo: "Acompañamiento",
     nombre: "Entraña a la brasa, koji de maíz colorado, verdolaga",
+    imagen: "/images/platos/5.jpeg",
+    alt: "Entraña a la brasa en láminas con verdolaga fresca sobre fuente ovalada de cerámica azul grisácea",
     descripcion:
       "Entraña sobre brasas corridas afuera del horno. Koji que cultivamos con maíz colorado del norte. Verdolaga fresca del Delta. El plato más directo de la mesa.",
   },
