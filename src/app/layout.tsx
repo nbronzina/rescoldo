@@ -12,8 +12,15 @@ export const metadata: Metadata = {
     title: "Rescoldo — Barracas, Buenos Aires · Otoño 2030",
     description:
       "Journal de la primera temporada. Una residencia gastronómica en Barracas, Buenos Aires.",
+    siteName: "Rescoldo",
     locale: "es_AR",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rescoldo — Barracas, Buenos Aires · Otoño 2030",
+    description:
+      "Journal de la primera temporada. Una residencia gastronómica en Barracas, Buenos Aires.",
   },
 };
 
