@@ -34,6 +34,8 @@ const platos: Plato[] = [
     numero: 3,
     tipo: "Entrada caliente",
     nombre: "Morilla rellena de miso de poroto pallar, caldo de huesos",
+    imagen: "/images/platos/3.jpeg",
+    alt: "Dos morillas rellenas en caldo de huesos oscuro, en cuenco de gres sobre la mesa de madera",
     descripcion:
       "Morillas de Esquel rellenas con miso que fermentamos en casa con poroto pallar del noroeste. Caldo de huesos de vaca reducido seis horas en el horno de barro.",
   },
