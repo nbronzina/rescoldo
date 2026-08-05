@@ -27,6 +27,7 @@ const equipo: Persona[] = [
   {
     nombre: "Tomás Ferreyra",
     rol: "Diseño sensorial",
+    imagen: "/images/equipo/tomas-ferreyra1.webp",
   },
 ];
 
