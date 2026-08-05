@@ -130,7 +130,7 @@ Primera temporada: marzo–mayo 2030
 
 Texto: Julián Arce
 Cerámica y diseño: Victoria Nabel
-Espacio: Nicolás Sardi, Mara Villanueva, Tomás Ferreyra
+Espacio: Nicolás Sardi, Inés Villanueva, Tomás Ferreyra
 Fotografía: Sebastián Ríos
 
 CUIT: 20-42187634-9

@@ -82,7 +82,7 @@ En web se agrega: la foto mal encuadrada o levemente borrosa es un recurso dieg�
 RESCOLDO
 ├── La temporada      ← el journal
 ├── El territorio     ← los cinco territorios y productores
-└── El equipo         ← Victoria, Nicolás, Mara, Tomás, Julián
+└── El equipo         ← Victoria, Nicolás, Inés, Tomás, Julián
 ```
 
 Navigation: mínima fija. Logo izquierda + 3 links derecha. Desaparece al hacer scroll hacia abajo, reaparece al hacer scroll hacia arriba.
@@ -107,7 +107,7 @@ El lector scrollea o no.
 
 4. **Los platos** — los siete platos. Foto + nombre + tres líneas de Julián. Sin receta, sin fecha.
 
-5. **El equipo** — Victoria, Nicolás, Mara, Tomás. Retrato + rol mínimo + una línea.
+5. **El equipo** — Victoria, Nicolás, Inés, Tomás. Retrato + rol mínimo + una línea.
 
 6. **La lista de espera** — "Rescoldo regresa. Otoño 2031." + campo de email. Puede no enviar a ningún lado o enviar un acuse de recibo diegético.
 
@@ -133,7 +133,7 @@ Primera temporada: marzo–mayo 2030
 
 Texto: Julián Arce
 Cerámica y diseño: Victoria Nabel
-Espacio: Nicolás Sardi, Mara Villanueva, Tomás Ferreyra
+Espacio: Nicolás Sardi, Inés Villanueva, Tomás Ferreyra
 Fotografía: [nombre ficticio]
 
 CUIT: 20-XXXXXXXX-X

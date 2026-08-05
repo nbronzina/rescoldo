@@ -39,8 +39,8 @@ La web no es la web sobre el restaurante. La web es el journal de la temporada e
 - Santiago Orbe — fermentación (ex-Noma)
 - Victoria Nabel — cerámica y diseño de imagen
 - Nicolás Sardi — construcción del espacio
-- Mara Villanueva — diseño del servicio (ex-escenógrafa Teatro San Martín)
-- Tomás Ferreyra — diseño de experiencia (arquitecto inconcluso)
+- Inés Villanueva — coreografía del servicio (ex-escenógrafa Teatro San Martín)
+- Tomás Ferreyra — diseño sensorial (arquitecto inconcluso)
 
 **Los territorios:** El Monte (Santiago del Estero), El Bosque (Esquel), El Río (Delta Paraná), La Costa (Bahía Samborombón), La Reserva (Costanera Sur).
 
@@ -177,7 +177,7 @@ Primera temporada: marzo–mayo 2030
 
 Texto: Julián Arce
 Cerámica y diseño: Victoria Nabel
-Espacio: Nicolás Sardi, Mara Villanueva, Tomás Ferreyra
+Espacio: Nicolás Sardi, Inés Villanueva, Tomás Ferreyra
 Fotografía: Sebastián Ríos
 
 CUIT: 20-42187634-9

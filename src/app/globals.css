@@ -23,6 +23,7 @@
   --text-lg: 1.125rem;
   --text-xl: 1.5rem;
   --text-2xl: 2.5rem;
+  --text-journal-date: 2.25rem;
   --text-hero: clamp(3rem, 8vw, 7rem);
 
   /* Ritmo */

@@ -18,7 +18,7 @@ const territorios = [
     nombre: "El Bosque",
     ubicacion: "Esquel, Chubut",
     coordenadas: "-42.9167, -71.3167",
-    distancia: "1.840 km al sudoeste",
+    distancia: "1.840 km al suroeste",
     proveedor: "Santiago Orbe, Rescoldo",
     ingredientes: "Morillas, llao llao, hongos de lenga",
     imagen: "/images/territorios/el-bosque.webp",
@@ -30,7 +30,7 @@ const territorios = [
     nombre: "El Río",
     ubicacion: "Delta del Paraná",
     coordenadas: "-34.3500, -58.5833",
-    distancia: "50 km al norte",
+    distancia: "35 km al norte",
     proveedor: "Pilar Iraola, bióloga",
     ingredientes: "Juncos, verdolaga, miel de isla",
     imagen: "/images/territorios/el-rio.webp",
@@ -68,21 +68,19 @@ export default function Territorio() {
   return (
     <div className="pt-32 pb-16 px-page">
       <div className="max-w-page mx-auto">
-        <ScrollFadeIn>
-          <div className="max-w-measure mb-20">
-            <p className="font-sans text-sm tracking-widest uppercase text-secondary mb-4">
-              El territorio
-            </p>
-            <h1 className="font-serif text-2xl text-text mb-6">
-              Cinco territorios, una mesa
-            </h1>
-            <p className="font-serif text-lg leading-body text-secondary">
-              Cada ingrediente de Rescoldo tiene un origen, un nombre y un
-              camino hasta la mesa de Lanín 234. Estos son los cinco territorios
-              que abastecen la primera temporada.
-            </p>
-          </div>
-        </ScrollFadeIn>
+        <div className="max-w-measure mb-20">
+          <p className="font-sans text-sm tracking-widest uppercase text-secondary mb-4">
+            El territorio
+          </p>
+          <h1 className="font-serif text-2xl text-text mb-6">
+            Cinco territorios, una mesa
+          </h1>
+          <p className="font-serif text-lg leading-body text-secondary">
+            Cada ingrediente de Rescoldo tiene un origen, un nombre y un
+            camino hasta la mesa de Lanín 234. Estos son los cinco territorios
+            que abastecen la primera temporada.
+          </p>
+        </div>
 
         <ScrollFadeIn>
           <div className="space-y-24">
@@ -99,7 +97,7 @@ export default function Territorio() {
                       src={t.imagen}
                       alt={t.alt}
                       fill
-                      sizes="(max-width: 768px) 100vw, 50vw"
+                      sizes="(max-width: 768px) 100vw, 600px"
                       className="object-cover"
                     />
                   </div>
