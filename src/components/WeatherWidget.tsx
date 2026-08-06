@@ -44,6 +44,8 @@ export function WeatherWidget() {
   const [weather, setWeather] = useState<WeatherData | null>(null);
 
   useEffect(() => {
+    const controller = new AbortController();
+
     async function fetchWeather() {
       const now = new Date();
       const diegetica = new Date(2030, now.getMonth(), now.getDate());
@@ -53,7 +55,8 @@ export function WeatherWidget() {
 
       try {
         const res = await fetch(
-          "https://api.open-meteo.com/v1/forecast?latitude=-34.6677&longitude=-58.3716&current=temperature_2m,weathercode"
+          "https://api.open-meteo.com/v1/forecast?latitude=-34.6677&longitude=-58.3716&current=temperature_2m,weathercode",
+          { signal: controller.signal }
         );
         if (!res.ok) throw new Error("weather");
         const data = await res.json();
@@ -65,7 +68,8 @@ export function WeatherWidget() {
           location: "Barracas, Buenos Aires",
           detail: `${dia} ${fecha} de ${mes} de 2030 · ${temp}°C · ${condition}`,
         });
-      } catch {
+      } catch (err) {
+        if (err instanceof DOMException && err.name === "AbortError") return;
         setWeather({
           location: "Barracas, Buenos Aires",
           detail: `${dia} ${fecha} de ${mes} de 2030`,
@@ -73,6 +77,7 @@ export function WeatherWidget() {
       }
     }
     fetchWeather();
+    return () => controller.abort();
   }, []);
 
   if (!weather) return <div className="h-8" aria-hidden="true" />;

@@ -16,9 +16,9 @@ const config: Config = {
         surface: "#F0ECE6",
       },
       fontFamily: {
-        serif: ["Cormorant Garamond", "Georgia", "serif"],
-        sans: ["DM Sans", "system-ui", "sans-serif"],
-        mono: ["DM Mono", "monospace"],
+        serif: ["var(--font-cormorant)", "Georgia", "serif"],
+        sans: ["var(--font-dm-sans)", "system-ui", "sans-serif"],
+        mono: ["var(--font-dm-mono)", "monospace"],
       },
       fontSize: {
         xs: "0.75rem",

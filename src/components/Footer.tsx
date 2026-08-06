@@ -18,7 +18,12 @@ export function Footer() {
           </div>
 
           <p className="text-sm text-secondary font-sans mb-4">
-            rescoldo@lanin234.com.ar
+            <a
+              href="mailto:rescoldo@lanin234.com.ar"
+              className="hover:text-text"
+            >
+              rescoldo@lanin234.com.ar
+            </a>
           </p>
 
           <div className="mb-8">

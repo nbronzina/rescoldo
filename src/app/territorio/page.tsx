@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { ScrollFadeIn } from "@/components/ScrollFadeIn";
+
+export const metadata: Metadata = {
+  title: "El territorio",
+  description:
+    "Cinco territorios abastecen la mesa: el monte, el bosque, el río, la costa y la reserva.",
+  alternates: { canonical: "/territorio" },
+};
 
 const territorios = [
   {
@@ -104,9 +112,9 @@ export default function Territorio() {
                 </div>
 
                 <div className="md:w-1/2">
-                  <p className="font-sans text-sm tracking-widest uppercase text-text mb-1">
+                  <h2 className="font-sans text-sm tracking-widest uppercase text-text mb-1">
                     {t.nombre}
-                  </p>
+                  </h2>
                   <p className="font-mono text-xs text-muted mb-1">
                     {t.ubicacion} · {t.coordenadas}
                   </p>

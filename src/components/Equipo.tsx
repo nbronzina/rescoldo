@@ -62,9 +62,9 @@ export function Equipo() {
                     />
                   )}
                 </div>
-                <p className="font-sans text-sm font-medium text-text">
+                <h3 className="font-sans text-sm font-medium text-text">
                   {persona.nombre}
-                </p>
+                </h3>
                 <p className="font-sans text-xs text-muted mt-1">
                   {persona.rol}
                 </p>

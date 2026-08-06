@@ -11,10 +11,10 @@
   --color-accent: #8B3A1A;
   --color-surface: #F0ECE6;
 
-  /* Tipografía */
-  --font-serif: 'Cormorant Garamond', Georgia, serif;
-  --font-sans: 'DM Sans', system-ui, sans-serif;
-  --font-mono: 'DM Mono', monospace;
+  /* Tipografía — familias servidas por next/font (Cormorant Garamond, DM Sans, DM Mono) */
+  --font-serif: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-dm-sans), system-ui, sans-serif;
+  --font-mono: var(--font-dm-mono), monospace;
 
   /* Escala */
   --text-xs: 0.75rem;

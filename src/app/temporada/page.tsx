@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "La temporada",
+  description:
+    "Diario de la primera temporada. Marzo–mayo 2030, Lanín 234, Barracas.",
+  alternates: { canonical: "/temporada" },
+};
 
 const entradas: {
   dia: string;
