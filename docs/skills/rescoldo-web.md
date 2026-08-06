@@ -166,6 +166,17 @@ Rescoldo opera entre marzo y mayo.
 Próxima apertura: otoño 2031.
 ```
 
+### El journal impreso
+
+El libro físico existe en el universo pero todavía no salió: **está en
+imprenta, tirada de cien ejemplares**, y se pide por email. La sección de
+la web lo anuncia como estado del mundo, sin botón de descarga — el estado
+real del proyecto (libro en edición) traducido a ficción. Cuando el PDF
+esté terminado, la sección puede pasar a ofrecerlo; hasta entonces, "está
+en imprenta" es el canon. No usar fechas de salida concretas: el presente
+diegético de la web flota con la fecha real (weather widget) y una fecha
+fija puede quedar en el pasado.
+
 ## Decisiones técnicas
 
 ### Stack recomendado
