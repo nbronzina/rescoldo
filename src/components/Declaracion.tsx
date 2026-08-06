@@ -24,6 +24,12 @@ export function Declaracion() {
             ingrediente tiene nombre y apellido.
           </p>
           <p className="font-serif text-lg leading-body text-text">
+            Rescoldo no tiene certificaciones. Ni sello, ni auditoría, ni
+            código que escanear. Tiene nombres: Raúl, Pilar, Ramona, Rubén.
+            Cuando algo llega mal, no se reclama a un sistema. Se llama a una
+            persona.
+          </p>
+          <p className="font-serif text-lg leading-body text-text">
             Cuando termine mayo, el fuego se apaga. La casa vuelve a ser casa.
             Y nosotros volvemos al territorio a buscar lo que viene.
           </p>

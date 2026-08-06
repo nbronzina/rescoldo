@@ -36,6 +36,10 @@ Psicología: Callado, metódico, ligeramente obsesivo. Cocina como si resolviera
 
 **Ramona Calderón** — pescadora artesanal, Bahía Samborombón. 53 años, pesca desde los quince. Cooperativa de Punta Piedras (ficción diegética — nombre no verificado). Proveedora de corvina, pescadilla, brótola, lisa, cangrejo azul.
 
+**Raúl Cálderes** — recolector, Fernández, Santiago del Estero. 72 años, recolecta algarroba y chañar en el monte desde chico. Muele la algarroba en un mortero de quebracho heredado de su madre; el arrope de chañar lo hace en olla de hierro sobre fuego de leña. Manda dos envíos por temporada, en bolsas de arpillera, cada una con un papel donde anota el día de recolección y el estado del monte. Proveedor de El Monte (algarroba, chañar, mistol). ⚠️ Apellido cercano a Calderón (Ramona) — no confundir ni "corregir" uno por el otro.
+
+**Rubén Quiroga** — viñatero, General Fernández Oro, Alto Valle del Río Negro. Bodega Las Bardas (productor ficticio, región real). Malbec y Cabernet Franc de viñas viejas, sin sulfitos agregados, levaduras espontáneas. Habló con Lara por teléfono en febrero de 2030, mandó las primeras cajas por transporte antes de la apertura y apareció en la casa sin avisar el 25 de abril. Trae doce cajas por temporada; si se terminan, se terminan.
+
 ## El equipo de espacio e imagen
 
 **Victoria Nabel** — ceramista y diseñadora de imagen, Villa del Parque, 38 años. Estudió diseño industrial en la UBA (dejó a los dos años). Vivió seis meses en Oaxaca (coincidencia con el período de Julián, no se cruzaron). Taller en Villa del Parque desde 2021. Hace la vajilla completa de Rescoldo y diseñó la imagen del restaurante: tipografía del menú, materiales de cada superficie, temperatura de luz, ausencia de decoración sin función. Llegó al proyecto por Santiago Orbe. Primera visita: domingo de agosto 2029. Volvió dos semanas después con tres bocetos de plato y propuesta completa del espacio.

@@ -26,7 +26,8 @@ export function ListaEspera() {
             aria-live="polite"
             className="font-serif text-base text-secondary leading-body"
           >
-            Anotado. Te escribimos en septiembre.
+            Anotado. La lista es más larga que la mesa. Si hay lugar, te
+            escribe Lara.
           </p>
         ) : (
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row items-center justify-center gap-3">

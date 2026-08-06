@@ -32,7 +32,7 @@ const territorios = [
     imagen: "/images/territorios/el-bosque.webp",
     alt: "Santiago Orbe buscando hongos en el bosque de lenga",
     texto:
-      "Entre los 800 y los 1.400 metros de altura, en los bosques de lenga y coihue de la cordillera chubutense, crecen las morillas y el llao llao. Santiago va dos veces por temporada. Trabaja con el CIEFAP, que conoce los rodales y los ciclos de cada especie. Las morillas llegan deshidratadas en frascos de vidrio. El llao llao viaja fresco, envuelto en hojas de nalca, y hay que usarlo en los tres días siguientes.",
+      "Entre los 800 y los 1.400 metros de altura, en los bosques de lenga y coihue de la cordillera chubutense, crecen las morillas, el llao llao y los hongos de otoño. Las morillas y el llao llao son de primavera: se juntaron en octubre, antes de la temporada. Las morillas se deshidratan en Esquel y llegan en frascos de vidrio; el llao llao se escabecha apenas cortado. Santiago viaja dos veces entre marzo y mayo por los hongos de lenga, que sí son de otoño. Trabaja con el CIEFAP, que conoce los rodales y los ciclos de cada especie.",
   },
   {
     nombre: "El Río",
@@ -44,7 +44,7 @@ const territorios = [
     imagen: "/images/territorios/el-rio.webp",
     alt: "Pilar Iraola en la lancha por los arroyos del Delta",
     texto:
-      "Pilar lleva al equipo en lancha por los arroyos del bajo. Conoce cada albardón y cada ciclo de crecida. Los juncos maduros los cortamos en abril, cuando la sal del tallo está concentrada. La verdolaga crece silvestre entre los sauces. La miel viene de Oriente, un isleño que tiene cuarenta colmenas hace treinta años.",
+      "Pilar lleva al equipo en lancha por los arroyos del bajo. Conoce cada albardón y cada ciclo de crecida. Los juncos maduros se cortan entre abril y mayo. La sal no viene del agua — el Delta es dulce. Viene de la ceniza: se quema el junco seco, se lava la ceniza, queda el mineral. La sal de marzo es del corte anterior. La verdolaga crece silvestre entre los sauces. La miel viene de Oriente, un isleño que tiene cuarenta colmenas hace treinta años.",
   },
   {
     nombre: "La Costa",
@@ -68,7 +68,7 @@ const territorios = [
     imagen: "/images/territorios/la-reserva.webp",
     alt: "La Reserva Ecológica con cortaderas",
     texto:
-      "La Reserva Ecológica de Costanera Sur está a veinte minutos de la casa. Trescientas cincuenta hectáreas de naturaleza recuperada en lo que fue un relleno costero. Vamos a pie. En los bordes del camino de acceso y los terraplenes del Belgrano Sur juntamos cortaderas, carqueja y aguaribay. Todo crece sin intervención, a la vista de los edificios de Puerto Madero.",
+      "La Reserva Ecológica de Costanera Sur está a seis kilómetros de la casa: veinte minutos en bicicleta. Trescientas cincuenta hectáreas de naturaleza recuperada en lo que fue un relleno costero. En los bordes del camino de acceso juntamos cortaderas y carqueja, siempre afuera del área protegida. El aguaribay lo cortamos más cerca, en los terraplenes del Belgrano Sur, a diez cuadras de la casa. Todo crece sin intervención, a la vista de los edificios de Puerto Madero.",
   },
 ];
 

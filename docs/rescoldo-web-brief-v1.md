@@ -53,7 +53,7 @@ La web no es la web sobre el restaurante. La web es el journal de la temporada e
 6. Quiebre dulce — Pan de algarroba con trigo, miel de isla, manteca
 7. Postre — Llao llao en escabeche, helado de arrope de tuna, sal de río
 
-**El vino:** Rubén Quiroga · Bodega Las Bardas, Alto Valle del Río Negro. Malbec y Cabernet Franc de secano. Sin sulfitos, levaduras espontáneas. Productor ficticio, región real.
+**El vino:** Rubén Quiroga · Bodega Las Bardas, Alto Valle del Río Negro. Malbec y Cabernet Franc de viñas viejas. Sin sulfitos, levaduras espontáneas. Productor ficticio, región real.
 
 ## Sistema visual
 
@@ -173,10 +173,14 @@ const url = `https://api.open-meteo.com/v1/forecast?latitude=-34.6677&longitude=
 
 ```
 Rescoldo — Lanín 234, Barracas, Buenos Aires
+Servicio: jueves a lunes · 20h — cerrado martes y miércoles
 Primera temporada: marzo–mayo 2030
+rescoldo@lanin234.com.ar
 
 Texto: Julián Arce
+Fermentación: Santiago Orbe
 Cerámica y diseño: Victoria Nabel
+Servicio: Lara Espina
 Espacio: Nicolás Sardi, Inés Villanueva, Tomás Ferreyra
 Fotografía: Sebastián Ríos
 

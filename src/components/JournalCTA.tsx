@@ -31,7 +31,8 @@ export function JournalCTA() {
             aria-live="polite"
             className="font-serif text-sm text-secondary mt-6"
           >
-            El journal estará disponible próximamente.
+            El journal se imprime en junio. Cien ejemplares. Si querés uno,
+            escribinos.
           </p>
         )}
       </div>

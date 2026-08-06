@@ -1,6 +1,12 @@
 # Auditoría design fiction — Rescoldo web
 
-Agosto 2026 · Auditoría multiagente en 4 lentes: canon, estanqueidad diegética, plausibilidad del futuro, función crítica/experiencial. 27 hallazgos, deduplicados y priorizados. Ningún cambio aplicado — este documento es para decidir.
+Agosto 2026 · Auditoría multiagente en 4 lentes: canon, estanqueidad diegética, plausibilidad del futuro, función crítica/experiencial. 27 hallazgos, deduplicados y priorizados.
+
+**Estado: aplicada** (aprobación CCO), con tres excepciones que requieren material o decisión externa:
+- Fotos imperfectas (mecanismo de imperfección visual) — requiere material real de Nicolás; la contraparte textual (entradas antiépicas del journal) sí está aplicada.
+- Hero con ~14 cubiertos — requiere reemplazo/regeneración de la imagen.
+- Etiquetas de Pilar (guía/bióloga por superficie) — intocable por brief previo.
+- Dominio propio — el código quedó centralizado en `src/lib/site.ts`; falta comprar/configurar el dominio diegético.
 
 ## Severidad ALTA — rompen la ficción para la audiencia objetivo
 
