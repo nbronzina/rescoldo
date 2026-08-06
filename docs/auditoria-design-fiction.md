@@ -2,11 +2,11 @@
 
 Agosto 2026 · Auditoría multiagente en 4 lentes: canon, estanqueidad diegética, plausibilidad del futuro, función crítica/experiencial. 27 hallazgos, deduplicados y priorizados.
 
-**Estado: aplicada** (aprobación CCO), con tres excepciones que requieren material o decisión externa:
-- Fotos imperfectas (mecanismo de imperfección visual) — requiere material real de Nicolás; la contraparte textual (entradas antiépicas del journal) sí está aplicada.
-- Hero con ~14 cubiertos — requiere reemplazo/regeneración de la imagen.
+**Estado: aplicada** (aprobación CCO). Notas:
+- Fotos imperfectas — APLICADO: dos fotos del teléfono de Julián (La leña, 2 de abril; Rubén, 25 de abril) generadas con la categoría canónica de nano-banana-brief.md y pase de degradación. Nota de continuidad aceptada por CCO: el piso del zaguán difiere entre ambas fotos.
+- Hero con ~14 cubiertos — RETIRADO tras verificación visual (ver sección Media).
 - Etiquetas de Pilar (guía/bióloga por superficie) — intocable por brief previo.
-- Dominio propio — el código quedó centralizado en `src/lib/site.ts`; falta comprar/configurar el dominio diegético.
+- Dominio propio — único pendiente: el código quedó centralizado en `src/lib/site.ts`; falta comprar/configurar el dominio diegético.
 
 ## Severidad ALTA — rompen la ficción para la audiencia objetivo
 

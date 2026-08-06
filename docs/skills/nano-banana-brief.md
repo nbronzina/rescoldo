@@ -44,6 +44,17 @@ The plate sits on [SUPERFICIE: worn wooden table / slate / linen cloth]. Shot fr
 [INGREDIENTE] on [SUPERFICIE: rough linen / dark slate / wooden board / brown paper]. [CONTEXTO: freshly foraged / just harvested / aged / fermented — pick one]. Natural light, flat lay or slight angle. Matte finish. No artificial color enhancement. Honest, unstyled. The ingredient looks like it came from the field, not from a supermarket. [FORMATO] ratio. High resolution.
 ```
 
+### Locación canónica: el zaguán de Lanín 234
+
+Referencia visual: la foto de la leña (journal, 2 de abril). Toda imagen del zaguán debe respetar estos puntos; ante la duda, usar esa foto como imagen de referencia en Nano Banana en vez de describir:
+
+1. Piso: baldosas calcáreas octogonales ocre/amarillentas con insertos chicos oscuros en las esquinas, gastadas y manchadas. NO baldosones rectangulares colorados, NO calcáreos decorativos.
+2. Paredes: revoque a la cal crema, agrietado y descascarado, manchas de humedad.
+3. Carpintería: puertas altas de madera oscura de doble hoja, molduras profundas, barniz viejo.
+4. Fuga: pasillo largo y oscuro que remata en el corredor con luz del patio al fondo. Nunca pared ciega.
+5. Sin plantas ni macetas — la vegetación vive en el patio.
+6. Suciedad de uso: astillas, tierra, marcas de trabajo.
+
 ### ESPACIO / ARQUITECTURA
 
 ```
