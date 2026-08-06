@@ -1,11 +1,37 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+import { Cormorant_Garamond, DM_Sans, DM_Mono } from "next/font/google";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import "./globals.css";
 
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["300", "400"],
+  style: ["normal", "italic"],
+  variable: "--font-cormorant",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-dm-sans",
+});
+
+const dmMono = DM_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-dm-mono",
+});
+
+export const viewport: Viewport = {
+  themeColor: "#FEFCF9",
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://rescoldo.vercel.app"),
-  title: "Rescoldo — Barracas, Buenos Aires · Otoño 2030",
+  title: {
+    default: "Rescoldo — Barracas, Buenos Aires · Otoño 2030",
+    template: "%s — Rescoldo",
+  },
   description:
     "Journal de la primera temporada. Una residencia gastronómica en Barracas, Buenos Aires.",
   openGraph: {
@@ -30,25 +56,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
-      <head>
-        <link
-          rel="preconnect"
-          href="https://fonts.googleapis.com"
-        />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+    <html
+      lang="es"
+      className={`${cormorant.variable} ${dmSans.variable} ${dmMono.variable}`}
+    >
       <body className="bg-bg text-text font-serif">
+        <a
+          href="#contenido"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[60] focus:bg-bg focus:px-4 focus:py-2 focus:border focus:border-accent font-sans text-sm text-text"
+        >
+          Ir al contenido
+        </a>
         <Nav />
-        <main>{children}</main>
+        <main id="contenido">{children}</main>
         <Footer />
       </body>
     </html>

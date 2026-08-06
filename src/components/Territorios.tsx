@@ -79,9 +79,9 @@ export function Territorios() {
                     className="object-cover"
                   />
                 </div>
-                <p className="font-sans text-sm tracking-widest uppercase text-text mb-1">
+                <h3 className="font-sans text-sm tracking-widest uppercase text-text mb-1">
                   {t.nombre}
-                </p>
+                </h3>
                 <p className="font-sans text-xs text-muted mb-1">
                   {t.ubicacion} · {t.proveedor}
                 </p>

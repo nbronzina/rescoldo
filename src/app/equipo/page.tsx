@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { ScrollFadeIn } from "@/components/ScrollFadeIn";
+
+export const metadata: Metadata = {
+  title: "El equipo",
+  description:
+    "Siete personas que dejaron lo que estaban haciendo para armar una temporada en una casa de Barracas.",
+  alternates: { canonical: "/equipo" },
+};
 
 type Persona = {
   nombre: string;
@@ -95,9 +103,9 @@ export default function EquipoPage() {
                 </div>
 
                 <div className="md:w-2/3">
-                  <p className="font-sans text-base font-medium text-text mb-1">
+                  <h2 className="font-sans text-base font-medium text-text mb-1">
                     {persona.nombre}
-                  </p>
+                  </h2>
                   <p className="font-sans text-xs text-muted mb-4">
                     {persona.rol}
                   </p>

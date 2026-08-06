@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import { HeroParallax } from "@/components/HeroParallax";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
+
 import { Declaracion } from "@/components/Declaracion";
 import { Territorios } from "@/components/Territorios";
 import { CitaPrensa } from "@/components/CitaPrensa";

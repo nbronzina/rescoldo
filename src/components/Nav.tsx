@@ -50,7 +50,8 @@ export function Nav() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 bg-bg/95 transition-transform duration-300 ease-in-out ${
+      aria-label="Principal"
+      className={`fixed top-0 left-0 right-0 z-50 bg-bg/95 transition-transform duration-300 ease-in-out motion-reduce:transition-none ${
         visible ? "" : "-translate-y-full"
       }`}
     >
