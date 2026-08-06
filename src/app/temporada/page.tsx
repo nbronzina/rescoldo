@@ -17,7 +17,7 @@ const entradas: {
   prologo?: boolean;
 }[] = [
   {
-    dia: "3",
+    dia: "5",
     mes: "Agosto 2029",
     titulo: "Victoria",
     prologo: true,
@@ -29,14 +29,14 @@ const entradas: {
     mes: "Febrero",
     titulo: "Tomás",
     texto:
-      "Lo encontré a las once de la noche parado en el zaguán. No hacía nada. Miraba el corredor hacia el patio, donde el horno estaba apagado todavía.\n\nLe pregunté qué hacía. Dijo que estaba midiendo cómo iba a entrar el olor cuando el horno estuviera encendido. Que el comensal tenía que olerlo antes de ver nada.\n\nNo le respondí. Tenía razón.",
+      "Lo encontré a las once de la noche parado en el zaguán. No hacía nada. Miraba el corredor hacia el patio, donde Nicolás recién había marcado la base del horno entre las columnas.\n\nLe pregunté qué hacía. Dijo que estaba midiendo cómo iba a entrar el olor cuando el horno estuviera encendido. Que el comensal tenía que olerlo antes de ver nada.\n\nNo le respondí. Tenía razón.",
   },
   {
     dia: "12",
     mes: "Marzo",
     titulo: "El primer fuego",
     texto:
-      "Encendimos el horno a las seis de la mañana. Nicolás había terminado de construir el horno la noche anterior. El barro estaba fresco todavía. Le dimos fuego despacio, con leña de paraíso del mismo patio. A las diez de la mañana el horno ya respiraba solo. Lara trajo café y nos sentamos los siete en la galería a mirar cómo el humo subía entre las columnas. Nadie dijo nada. No hacía falta.",
+      "Encendimos el horno a las seis de la mañana. Nicolás lo había terminado la semana anterior y lo veníamos curando de a poco, con fuegos chicos, para que el barro no se rajara. Hoy le dimos fuego de verdad, despacio, con leña de paraíso del mismo patio. A las diez de la mañana el horno ya respiraba solo. Lara trajo café y nos sentamos los siete en la galería a mirar cómo el humo subía entre las columnas. Nadie dijo nada. No hacía falta.",
   },
   {
     dia: "18",
@@ -50,7 +50,7 @@ const entradas: {
     mes: "Marzo",
     titulo: "Santiago",
     texto:
-      "Abrió los primeros frascos del garum de achuras esa mañana. Lleva ocho semanas fermentando en el lavadero. El olor es brutal al principio. Después de un minuto el olfato se adapta y aparece algo debajo — caldo oscuro, profundo, casi dulce.\n\nSantiago lo anotó en su cuaderno sin decir nada. Yo lo probé con el dedo. Nos miramos. Está listo.",
+      "Abrió los primeros frascos del garum de achuras esa mañana. La primera tanda arrancó en enero — ocho semanas fermentando en el lavadero, con el calor del verano haciendo la mitad del trabajo. El olor es brutal al principio. Después de un minuto el olfato se adapta y aparece algo debajo — caldo oscuro, profundo, casi dulce.\n\nSantiago lo anotó en su cuaderno sin decir nada. Yo lo probé con el dedo. Nos miramos. Está listo.",
   },
   {
     dia: "27",
@@ -58,6 +58,13 @@ const entradas: {
     titulo: "Primera noche de servicio",
     texto:
       "Diez personas. Ninguna sabía a qué venía exactamente. Lara les había dicho solamente la dirección y la hora. Servimos siete platos en tres horas. El zapallo en rescoldo se pasó cinco minutos. La corvina estaba perfecta. Victoria puso las piezas nuevas por primera vez: platos hondos de gres con un esmalte que parece tierra mojada. Al final alguien preguntó si podía volver. Le dijimos que sí, pero que no sabíamos cuándo.",
+  },
+  {
+    dia: "2",
+    mes: "Abril",
+    titulo: "La leña",
+    texto:
+      "El quebracho subió otra vez: ochenta mil el metro, puesto en Barracas. Compramos tres. Vino el inspector de la comuna por la habilitación del horno: midió la distancia a la medianera, sacó dos fotos, firmó. El proveedor de hielo no contestó en toda la semana. Lara consiguió otro. Llovizna desde el jueves. El zaguán necesita otra mano de cal.",
   },
   {
     dia: "4",
@@ -78,21 +85,28 @@ const entradas: {
     mes: "Abril",
     titulo: "Lluvia",
     texto:
-      "Llovió tres días seguidos. El patio se inundó. Cocinamos igual. El horno de barro tiene techo de galería, así que el fuego siguió. Santiago aprovechó la humedad para revisar las fermentaciones. El koji de maíz colorado está perfecto. El miso de pallar necesita dos semanas más.",
+      "Llovió tres días seguidos. El patio se inundó. Cocinamos igual. El horno de barro tiene techo de galería, así que el fuego siguió. Santiago aprovechó la humedad para revisar las fermentaciones. El koji de maíz colorado está perfecto. La tanda nueva del miso de pallar necesita dos semanas más.",
   },
   {
     dia: "25",
     mes: "Abril",
     titulo: "Rubén",
     texto:
-      "Rubén Quiroga llegó desde General Fernández Oro con dos cajas de vino y sin avisar. Había hablado con Lara por teléfono en febrero, nada más. Dejó las cajas en el zaguán, abrió una botella sin preguntar y sirvió dos vasos. El Malbec tenía algo que no esperaba. No fruta, no roble. Algo más parecido a tierra después de la lluvia. Le pregunté cómo lo hacía. Dijo: sin apurarlo.\n\nQuedamos en que traía doce cajas por temporada. Que si se terminaban, se terminaban.",
+      "Rubén Quiroga llegó desde General Fernández Oro con dos cajas de vino y sin avisar. Había hablado con Lara por teléfono en febrero y mandado las primeras cajas por transporte antes de la apertura. Nunca había venido. Dejó las cajas en el zaguán, abrió una botella sin preguntar y sirvió dos vasos. El Malbec tenía algo que no esperaba. No fruta, no roble. Algo más parecido a tierra después de la lluvia. Le pregunté cómo lo hacía. Dijo: sin apurarlo.\n\nQuedamos en que traía doce cajas por temporada. Que si se terminaban, se terminaban.",
   },
   {
     dia: "8",
     mes: "Mayo",
     titulo: "Pilar",
     texto:
-      "Fuimos al Delta con Santiago a buscar juncos y miel. Pilar Iraola nos llevó en su lancha por los arroyos del bajo. Conoce los humedales como nadie. Nos enseñó a distinguir la sal del junco maduro. Volvimos con tres cajas y las manos cortadas.",
+      "Fuimos al Delta con Santiago a buscar juncos y miel. Pilar Iraola nos llevó en su lancha por los arroyos del bajo. Conoce los humedales como nadie. Nos enseñó a elegir el junco maduro para la sal. Volvimos con tres cajas y las manos cortadas.",
+  },
+  {
+    dia: "11",
+    mes: "Mayo",
+    titulo: "El mercado",
+    texto:
+      "Fui al Mercado San Telmo a buscar un repuesto para la cámara de fermentación. Está impecable: paneles en el techo, agua recuperada, una pantalla por puesto que muestra el origen de cada cosa. Un grupo de turistas le sacaba fotos al certificado enmarcado de la entrada.\n\nCompré el repuesto y volví. En el camino pensé en Ramona, que cuando algo no sale manda una nota escrita a mano con lo que manda en cambio. Las pantallas no hacen eso. No digo que sea mejor. Digo que elegimos esto.",
   },
   {
     dia: "28",

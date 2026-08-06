@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, DM_Sans, DM_Mono } from "next/font/google";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -26,18 +27,19 @@ export const viewport: Viewport = {
   themeColor: "#FEFCF9",
 };
 
+const DESCRIPTION =
+  "Cocinamos entre marzo y mayo en una casa de Barracas. Este es el registro de la primera temporada.";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://rescoldo.vercel.app"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Rescoldo — Barracas, Buenos Aires · Otoño 2030",
     template: "%s — Rescoldo",
   },
-  description:
-    "Journal de la primera temporada. Una residencia gastronómica en Barracas, Buenos Aires.",
+  description: DESCRIPTION,
   openGraph: {
     title: "Rescoldo — Barracas, Buenos Aires · Otoño 2030",
-    description:
-      "Journal de la primera temporada. Una residencia gastronómica en Barracas, Buenos Aires.",
+    description: DESCRIPTION,
     siteName: "Rescoldo",
     locale: "es_AR",
     type: "website",
@@ -45,8 +47,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Rescoldo — Barracas, Buenos Aires · Otoño 2030",
-    description:
-      "Journal de la primera temporada. Una residencia gastronómica en Barracas, Buenos Aires.",
+    description: DESCRIPTION,
   },
 };
 

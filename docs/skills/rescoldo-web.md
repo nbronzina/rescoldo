@@ -207,6 +207,11 @@ El sistema de Brae (Studio Round, Melbourne) es el referente técnico más cerca
 
 3. **La web y el objeto impreso son el mismo sistema** — los tokens CSS son los mismos valores que los del libro de Illustrator. #FEFCF9, #2D2D2D, DM Sans, Lora. No son "inspirados en" — son los mismos.
 
+## Señales de futuro — decisiones de worldbuilding
+
+- **El peso en 2030 está estabilizado.** El menú cuesta $420.000 por persona: esa cifra solo cierra con inflación de un dígito sostenida entre 2026 y 2030. Es una tesis deliberada del universo (la desinflación se consolidó), no un placeholder. Todo precio nuevo que aparezca en el universo (leña, vino, insumos) debe ser coherente con ese sendero.
+- Referencia interna: la leña de quebracho cuesta $80.000 el metro en abril de 2030 (journal, entrada "La leña").
+
 ## Conexión con el universo diegético compartido
 
 La web de Rescoldo existe en el mismo año que el Mercado San Telmo 2030 (futures-in-maps.com/san-telmo). Son dos artefactos del mismo universo. Pueden coexistir sin contradicción:
