@@ -213,7 +213,7 @@ Próxima apertura: otoño 2031.
 ### 5. El menú con precios
 
 ```
-Menú de degustación — $420.000 por persona · vinos a elección
+Menú de degustación · $620.000 por persona · vinos a elección
 ```
 
 Precio en pesos argentinos, plausible para 2030. Tipografía mono.

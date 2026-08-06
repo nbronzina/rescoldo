@@ -68,7 +68,7 @@ Español rioplatense culto pero no académico. Primera persona. No habla como pa
 
 - Frases cortas como peso. Párrafos breves.
 - Alterna frases largas (descripción, contexto) con frases cortas (conclusión, golpe).
-- Usa la raya (—) como inciso oral, no como decoración.
+- La raya (—) solo en atribuciones y firmas (— Julián Arce; — Lento) y en separadores de título. En prosa, no: el remate con raya ("X — aposición final") es calco del inglés y tic de IA. Usar dos puntos, coma o punto.
 - Párrafos separados por espacio, no sangría.
 
 ### Tono

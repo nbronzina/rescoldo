@@ -68,6 +68,16 @@ The plate sits on [SUPERFICIE: worn wooden table / slate / linen cloth]. Shot fr
 An atmospheric photograph of [SUJETO: smoke rising in an old kitchen / a wood fire dying down / water moving in a dark channel / light through leaves at dusk / an empty table at night]. No people, no text, no objects in focus. The image is a mood. Muted tones, matte, soft focus or selective focus. Horizontal 4:3 ratio (for double-page spread). High resolution.
 ```
 
+### FOTO DE TELÉFONO — registro de Julián (solo journal)
+
+Categoría que invierte los principios del estilo Rescoldo a propósito. La web tiene dos registros fotográficos diegéticos: las fotos buenas son de Sebastián Ríos (acreditado en el footer); estas son las que sacó Julián con el teléfono mientras pasaba. Van ÚNICAMENTE en entradas del diario de /temporada, máximo 2–3 en toda la web — es imperfección controlada, no descuido general.
+
+```
+A casual smartphone photo of [SUJETO]. [LUZ: direct flash at night / flat grey daylight / dim available light]. Careless framing: [DEFECTO: off-center subject / tilted horizon / object intruding at the frame edge / doorframe cut off]. [DEGRADACIÓN: slight motion blur / harsh flash hotspot / blown-out foreground / heavy shadow noise]. Phone camera quality, visible noise, no color grading, no composition. Vertical 3:4 ratio. A photo taken to keep a record, not a designed photograph.
+```
+
+Regla de evaluación: si la imagen queda linda por accidente, se descarta y se regenera. Pasar por el checklist de fotoperiodismo.md invertido — acá el fracaso estético es el éxito documental.
+
 ### DETALLE / TEXTURA
 
 ```

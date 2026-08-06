@@ -44,7 +44,7 @@ const territorios = [
     imagen: "/images/territorios/el-rio.webp",
     alt: "Pilar Iraola en la lancha por los arroyos del Delta",
     texto:
-      "Pilar lleva al equipo en lancha por los arroyos del bajo. Conoce cada albardón y cada ciclo de crecida. Los juncos maduros se cortan entre abril y mayo. La sal no viene del agua — el Delta es dulce. Viene de la ceniza: se quema el junco seco, se lava la ceniza, queda el mineral. La sal de marzo es del corte anterior. La verdolaga crece silvestre entre los sauces. La miel viene de Oriente, un isleño que tiene cuarenta colmenas hace treinta años.",
+      "Pilar lleva al equipo en lancha por los arroyos del bajo. Conoce cada albardón y cada ciclo de crecida. Los juncos maduros se cortan entre abril y mayo. El Delta es de agua dulce: la sal no viene del agua sino de la ceniza. Se quema el junco seco, se lava la ceniza, queda el mineral. La sal de marzo es del corte anterior. La verdolaga crece silvestre entre los sauces. La miel viene de Oriente, un isleño que tiene cuarenta colmenas hace treinta años.",
   },
   {
     nombre: "La Costa",

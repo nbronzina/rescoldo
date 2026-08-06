@@ -55,7 +55,7 @@ const platos: Plato[] = [
     imagen: "/images/platos/5.jpeg",
     alt: "Entraña a la brasa en láminas con verdolaga fresca sobre fuente ovalada de cerámica azul grisácea",
     descripcion:
-      "Entraña sobre brasas corridas afuera del horno. Koji que cultivamos con maíz colorado del norte. Verdolaga del Delta — fresca mientras el otoño la deje, encurtida después. El plato más directo de la mesa.",
+      "Entraña sobre brasas corridas afuera del horno. Koji que cultivamos con maíz colorado del norte. Verdolaga del Delta: fresca mientras el otoño la deje, encurtida después. El plato más directo de la mesa.",
   },
   {
     numero: 6,
@@ -74,7 +74,7 @@ const platos: Plato[] = [
     imagen: "/images/platos/7.jpeg",
     alt: "Cuenco de cerámica clara con bochas de helado de arrope de tuna, llao llao en escabeche y escamas de sal",
     descripcion:
-      "Llao llao del bosque de lenga en escabeche suave — fermentado en el lavadero. Helado de arrope de tuna del monte. Escamas de sal del Paraná. El último plato cierra el mapa.",
+      "Llao llao del bosque de lenga en escabeche suave, fermentado en el lavadero. Helado de arrope de tuna del monte. Escamas de sal del Paraná. El último plato cierra el mapa.",
   },
 ];
 
@@ -87,7 +87,7 @@ export function Platos() {
             Los platos
           </h2>
           <p className="font-mono text-sm text-secondary mb-16">
-            Menú de degustación — $420.000 por persona · vinos a elección
+            Menú de degustación · $620.000 por persona · vinos a elección
           </p>
         </ScrollFadeIn>
 

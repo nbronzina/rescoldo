@@ -220,8 +220,8 @@ El sistema de Brae (Studio Round, Melbourne) es el referente técnico más cerca
 
 ## Señales de futuro — decisiones de worldbuilding
 
-- **El peso en 2030 está estabilizado.** El menú cuesta $420.000 por persona: esa cifra solo cierra con inflación de un dígito sostenida entre 2026 y 2030. Es una tesis deliberada del universo (la desinflación se consolidó), no un placeholder. Todo precio nuevo que aparezca en el universo (leña, vino, insumos) debe ser coherente con ese sendero.
-- Referencia interna: la leña de quebracho cuesta $80.000 el metro en abril de 2030 (journal, entrada "La leña").
+- **La desinflación argentina continuó su sendero gradual, sin estabilización total.** Derivación del precio del menú ($620.000 por persona, marzo 2030): base real de mercado, Aramburu (dos estrellas Michelin, CABA) cobraba $360.000 el menú a mediados de 2026; sendero de inflación según REM/BCRA y bancos internacionales: ~30% interanual 2026, ~20% 2027, ~14% 2028, convergiendo a un dígito hacia 2029–2030. Factor compuesto mediados-2026 → marzo-2030: ~1,75. Un menú de degustación tope de gama en marzo de 2030 cuesta $600.000–650.000; Rescoldo fija $620.000. Todo precio nuevo del universo debe ser coherente con este sendero (no con una estabilización perfecta ni con una espiral).
+- Referencia interna: la leña de quebracho cuesta $80.000 el metro en abril de 2030 (journal, entrada "La leña"); consistente con el factor ~1,75 sobre los ~$45.000–55.000 de 2026.
 
 ## Conexión con el universo diegético compartido
 
