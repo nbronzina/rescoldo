@@ -50,7 +50,7 @@ const entradas: {
     mes: "Marzo",
     titulo: "Santiago",
     texto:
-      "Abrió los primeros frascos del garum de achuras esa mañana. La primera tanda arrancó en enero — ocho semanas fermentando en el lavadero, con el calor del verano haciendo la mitad del trabajo. El olor es brutal al principio. Después de un minuto el olfato se adapta y aparece algo debajo — caldo oscuro, profundo, casi dulce.\n\nSantiago lo anotó en su cuaderno sin decir nada. Yo lo probé con el dedo. Nos miramos. Está listo.",
+      "Abrió los primeros frascos del garum de achuras esa mañana. La primera tanda arrancó en enero: ocho semanas fermentando en el lavadero, con el calor del verano haciendo la mitad del trabajo. El olor es brutal al principio. Después de un minuto el olfato se adapta y aparece algo debajo: caldo oscuro, profundo, casi dulce.\n\nSantiago lo anotó en su cuaderno sin decir nada. Yo lo probé con el dedo. Nos miramos. Está listo.",
   },
   {
     dia: "27",
@@ -78,7 +78,7 @@ const entradas: {
     mes: "Abril",
     titulo: "Los cangrejos",
     texto:
-      "Ramona mandó cangrejos. Nueve. Su sobrino llegó a las cinco de la tarde con una conservadora y una nota que decía que la corvina no había salido bien esa semana y que mandaba esto en cambio. Nueve cangrejos azules vivos, de tamaños distintos, ninguno igual al otro. El servicio empezaba a las ocho.\n\nLara los miró y dijo: bueno. Así, sin signo de pregunta.\n\nLos separé por tamaño. Los tres más grandes directamente sobre las brasas, enteros. Los medianos abiertos, con una cucharada del garum de Santiago. Los dos más pequeños crudos, en láminas finas, con limón del Delta y aceite de peperina.\n\nInés reorganizó el servicio en veinte minutos. Esa noche el cangrejo fue el único plato — tres momentos del mismo animal. La mesa no habló durante ese momento. No porque algo estuviera mal.\n\nDespués del servicio Tomás dijo que había sido la mejor noche hasta ese momento. Yo no estaba seguro. Pero entendí algo.",
+      "Ramona mandó cangrejos. Nueve. Su sobrino llegó a las cinco de la tarde con una conservadora y una nota que decía que la corvina no había salido bien esa semana y que mandaba esto en cambio. Nueve cangrejos azules vivos, de tamaños distintos, ninguno igual al otro. El servicio empezaba a las ocho.\n\nLara los miró y dijo: bueno. Así, sin signo de pregunta.\n\nLos separé por tamaño. Los tres más grandes directamente sobre las brasas, enteros. Los medianos abiertos, con una cucharada del garum de Santiago. Los dos más pequeños crudos, en láminas finas, con limón del Delta y aceite de peperina.\n\nInés reorganizó el servicio en veinte minutos. Esa noche el cangrejo fue el único plato: tres momentos del mismo animal. La mesa no habló durante ese momento. No porque algo estuviera mal.\n\nDespués del servicio Tomás dijo que había sido la mejor noche hasta ese momento. Yo no estaba seguro. Pero entendí algo.",
   },
   {
     dia: "19",

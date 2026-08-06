@@ -49,7 +49,7 @@ La skill la define como mecanismo diegético ("una foto burrosa dice 'alguien la
 - **Morillas:** son de primavera; "deshidratadas" está bien resuelto, pero "Santiago va dos veces por temporada" a recolectar contradice el ciclo. Una frase lo convierte en detalle de verosimilitud: recolectadas en primavera 2029, los viajes de otoño son por los hongos de lenga.
 
 ### Crítica / experiencial
-- **La mesa del hero tiene ~14 cubiertos**; todo el texto insiste en diez. Incoherencia en el primer scroll, para una audiencia que cuenta sillas.
+- ~~La mesa del hero tiene ~14 cubiertos~~ **RETIRADO tras verificación visual**: la foto muestra dos cubiertos armados en primer plano y pilas de vajilla en el centro (lectura de pre-servicio, no de mesa servida para N personas). Las sillas visibles (~11–12, con oclusiones) conviven con el canon ("lugar para diez, once si apretamos"). El hallazgo del agente estaba exagerado.
 - **"El journal estará disponible próximamente"** es el único copy de la web que habla desde 2026 (coming-soon corporativo). Reescribir desde el mundo: fecha, tirada, voz de Julián.
 - **La lista de espera confirma con certeza total** ("Te escribimos en septiembre") cuando el brief la define como algo "que puede no llevar a ningún lado". Trasladar la incertidumbre al copy ("La lista es más larga que la mesa. Si hay lugar, te escribe Lara.").
 - **2030 no se filtra en los textos:** fuera del widget y las fechas, el contenido podría ser de 2024. Dos o tres goteos mundanos (la crecida del Delta, lo que ya no llega de Samborombón) harían legible el futuro sin explicarlo.

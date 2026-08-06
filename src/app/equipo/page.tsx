@@ -21,7 +21,7 @@ const equipo: Persona[] = [
     nombre: "Julián Arce",
     rol: "Cocina",
     imagen: "/images/equipo/julian-arce.webp",
-    bio: "Treinta y cuatro años. Cuatro años en el equipo interno de fermentación de Noma Copenhagen — no en cocina principal. Volvió a Buenos Aires en 2029 con la idea de cocinar en un lugar que ya existiera. Lara le mostró la casa de Lanín un jueves de junio.",
+    bio: "Treinta y cuatro años. Cuatro años en el equipo interno de fermentación de Noma Copenhagen, no en cocina principal. Volvió a Buenos Aires en 2029 con la idea de cocinar en un lugar que ya existiera. Lara le mostró la casa de Lanín un jueves de junio.",
   },
   {
     nombre: "Lara Espina",
