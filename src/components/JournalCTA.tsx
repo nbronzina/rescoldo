@@ -1,10 +1,4 @@
-"use client";
-
-import { useState } from "react";
-
 export function JournalCTA() {
-  const [clicked, setClicked] = useState(false);
-
   return (
     <section className="px-page py-32 border-t border-surface">
       <div className="max-w-measure mx-auto text-center">
@@ -18,23 +12,19 @@ export function JournalCTA() {
           El registro completo de la temporada.
         </p>
 
-        <button
-          onClick={() => setClicked(true)}
-          className="px-6 py-3 border border-accent text-accent font-sans text-sm hover:bg-accent hover:text-bg transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-        >
-          Descargar journal
-        </button>
-
-        {clicked && (
-          <p
-            role="status"
-            aria-live="polite"
-            className="font-serif text-sm text-secondary mt-6"
+        <p className="font-serif text-base text-text leading-body mb-1">
+          Está en imprenta. Cien ejemplares.
+        </p>
+        <p className="font-serif text-base text-secondary leading-body">
+          Si querés uno,{" "}
+          <a
+            href="mailto:rescoldo@lanin234.com.ar"
+            className="text-accent hover:text-text"
           >
-            El journal se imprime en junio. Cien ejemplares. Si querés uno,
-            escribinos.
-          </p>
-        )}
+            escribinos
+          </a>
+          .
+        </p>
       </div>
     </section>
   );
