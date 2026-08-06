@@ -65,6 +65,10 @@ const entradas: {
     titulo: "La leña",
     texto:
       "El quebracho subió otra vez: ochenta mil el metro, puesto en Barracas. Compramos tres. Vino el inspector de la comuna por la habilitación del horno: midió la distancia a la medianera, sacó dos fotos, firmó. El proveedor de hielo no contestó en toda la semana. Lara consiguió otro. Llovizna desde el jueves. El zaguán necesita otra mano de cal.",
+    imagen: {
+      src: "/images/atmosfericas/lena-zaguan.jpeg",
+      alt: "Pila de leña de quebracho contra la pared del zaguán, de noche, con flash",
+    },
   },
   {
     dia: "4",
@@ -93,6 +97,10 @@ const entradas: {
     titulo: "Rubén",
     texto:
       "Rubén Quiroga llegó desde General Fernández Oro con dos cajas de vino y sin avisar. Había hablado con Lara por teléfono en febrero y mandado las primeras cajas por transporte antes de la apertura. Nunca había venido. Dejó las cajas en el zaguán, abrió una botella sin preguntar y sirvió dos vasos. El Malbec tenía algo que no esperaba. No fruta, no roble. Algo más parecido a tierra después de la lluvia. Le pregunté cómo lo hacía. Dijo: sin apurarlo.\n\nQuedamos en que traía doce cajas por temporada. Que si se terminaban, se terminaban.",
+    imagen: {
+      src: "/images/atmosfericas/cajas-vino-zaguan.jpeg",
+      alt: "Dos cajas de cartón y una botella de vino en el piso del zaguán",
+    },
   },
   {
     dia: "8",
@@ -202,7 +210,7 @@ export default function Temporada() {
                       src={entrada.imagen.src}
                       alt={entrada.imagen.alt}
                       width={400}
-                      height={400}
+                      height={533}
                       className="w-full h-auto"
                       sizes="(max-width: 768px) 50vw, 260px"
                     />
